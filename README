@@ -1,0 +1,13 @@
+What it Does:
+1. Reads the label strings (key/value pair) from Google docs and excel sheets
+2. Converts them into device understandable format (strings.xml for Android, localized string file for iOS and properties file for J2ME devices). 
+3. It also provides option to push the generated files into the required location
+
+
+How to use?
+1. Unzip the labelgenerator.zip file
+2. In linux change permission for generatelabels.sh :  chmod 755 generatelabels.sh
+3. Double click the .sh or .bat file based on the OS
+
+
+

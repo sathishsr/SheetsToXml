@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="RHB_OSK">RHB OSK</string>
+<string name="BROKER_NAME">RHB-OSK</string>
+<string name="DIALOG_HEADER">RHB OSK</string>
+<string name="LOADING_PREFERENCE_LABEL">Loading Preferences</string>
+<string name="WELCOME_LABEL">Welcome</string>
+
+<string name="MENU_SUPPORT">Support</string>
+<string name="MENU_MORE">More</string>
+<string name="MORE_TITLE">MORE</string>
+<string name="MORE_CONTACT_US">Contact Us</string>
+
+<string name="OSK_CANCEL">Cancel</string>
+<string name="OSK_DONE">Done</string>
+<string name="OSK_LOADING">Loading...</string>
+<string name="OSK_FETCHING_DETAILS">Fetching  Details..</string>
+<string name="OSK_PROCESSING_REQUEST">Processing Request..</string>
+<string name="OSK_SUBMIT">Submit</string>
+<string name="OSK_GO">GO</string>
+<string name="OSK_OK">OK</string>
+<string name="OSK_SELECT">Select</string>
+<string name="OSK_CONTINUE">Continue</string>
+<string name="OSK_CONFIRM">Confirm</string>
+<string name="OSK_BACK">Back</string>
+<string name="OSK_CLOSE">Close</string>
+<string name="OSK_ERROR">Error</string>
+<string name="OSK_EXIT">Exit</string>
+<string name="OSK_RETRY">Retry</string>
+<string name="OSK_FROM">From</string>
+<string name="OSK_TO">To</string>
+<string name="OSK_NO">No</string>
+<string name="OSK_LOWER_TO">to</string>
+<string name="OSK_YES">Yes</string>
+<string name="OSK_REFRESH">Refresh</string>
+<string name="OSK_INFO">Info</string>
+<string name="OSK_ACKNOWLEDGEMENT">Acknowledgement</string>
+<string name="OSK_CUST_SUPPORT">Contact Us</string>
+<string name="OSK_EXIT_ALERT_MSG">Do you want to exit the application?</string>
+<string name="OSK_LOGOUT_ALERT_MSG">Are you sure you want to logout?</string>
+<string name="OSK_APP_IDLE_TIMEOUT_MSG">Inactivity Timeout occurred. Please login again.</string>
+
+<string name="MSF_ERROR_SECURITY">Security Exception. You are not permitted to connect to this server.</string>
+<string name="MSF_ERROR_CONNECT">Operation could not be completed. Please check your network connections.</string>
+<string name="MSF_ERROR_ILLEGAL_ARGUMENT">Network disconnected, while waiting for server response.\nPlease try again.</string>
+<string name="MSF_ERROR_UNKNOWN">System is not able to process the current request.\nPlease try again.</string>
+<string name="MSF_ERROR_NULL">Empty response from server</string>
+<string name="MSF_ERROR_SOCKET_TIMEOUT">Request Timeout.\nPlease try again</string>
+
+<string name="SPL_APP_NEEDS_NETWORK_DIALOG_MSG">Application needs network to proceed</string>
+<string name="SPL_RETRIEVE_DIALOG_BTN">Retrieve</string>
+<string name="SPL_EXIT_DIALOG_BTN">Exit</string>
+<string name="SPL_PW_MSF">Powered by Market Simplified</string>
+<string name="SPL_COPYRIGHTS">© 2014.PT RHB OSK Securities Indonesia</string>
+
+<string name="MENU_LIVETRADE">Live Trade</string>
+<string name="MENU_TOPSTOCKS">Top Stocks</string>
+<string name="MENU_MYWLIST">My Watchlist</string>
+<string name="MENU_QUOTE">Quick Quotes</string>
+<string name="MENU_ORDRPAD">Order Pad</string>
+<string name="MENU_ORDRSTATUS">Order Status &amp; Queue</string>
+<string name="MENU_TRADSETTLEMENT">Trade Settlement</string>
+<string name="MENU_PORTFOLIO">Portfolio</string>
+<string name="MENU_TRADDETAILS">Trade Details</string>
+<string name="MENU_MKTINDEX">Market Indices</string>
+<string name="MENU_MKTSCOREBRD">Market Scoreboard</string>
+<string name="MENU_CHARTS">Charts</string>
+<string name="MENU_RESEARCH">Research</string>
+<string name="MENU_STKFUNDAMENTALS">Stock Fundamentals</string>
+<string name="MENU_CORPINFO">Corporate Information</string>
+<string name="MENU_NEWS">News</string>
+<string name="MENU_CURREXCG">Currency Exchange</string>
+<string name="MENU_CASHWDRL">Cash Withdrawal</string>
+<string name="MENU_SETTINGS">Settings</string>
+<string name="MENU_SCREENER">Stock Screener</string>
+<string name="MENU_IPO">IPO</string>
+
+<string name="SEARCH_GETQUOTES_HEADING_LBL">Get Quotes</string>
+<string name="SEARCH_ENTERCODE_LBL">Enter Code / Name to search</string>
+<string name="SEARCH_SEARCHRESULTS_LBL">Search Results</string>
+
+<string name="LOGIN_LOGIN_BTN">Login</string>
+<string name="LOGIN_USERNAME_LBL">USERNAME</string>
+<string name="LOGIN_PASSWORD_LBL">PASSWORD</string>
+
+<string name="QUOTE_LAST_LBL">Last</string>
+<string name="QUOTE_CHANGE_LBL">Change (%)</string>
+<string name="QUOTE_BID_LOT_LBL">Bid(lot):</string>
+<string name="QUOTE_OFFER_LOT_LBL">Offer(lot);</string>
+<string name="QUOTE_QUICKQUOTES_HEADING_LBL">QUICK QUOTES</string>
+<string name="QUOTE_DETAILS_LBL">Details</string>
+<string name="QUOTE_BIDOFFER_LBL">Bid/Offer</string>
+<string name="QUOTE_FUNDAMENTALS_LBL">Fundamentals</string>
+<string name="QUOTE_LASTUPDATE_LBL">Last Update</string>
+<string name="QUOTE_VOLUME_LBL">Volume</string>
+<string name="QUOTE_OPEN_LBL">Open</string>
+<string name="QUOTE_HIGH_LBL">High</string>
+<string name="QUOTE_LOW_LBL">Low</string>
+<string name="QUOTE_WEEK_RANGE_LBL">52 Week Range</string>
+<string name="QUOTE_BUY_PERCENT_LBL">Buy%</string>
+<string name="QUOTE_STOCK_SECTOR_LBL">Stock Sector</string>
+<string name="QUOTE_REFERENCE_LBL">Reference</string>
+<string name="QUOTE_PRICE_HEADER_LBL">Price</string>
+<string name="QUOTE_VOLUME_HEADER_LBL">Volume</string>
+<string name="QUOTE_BID_HEADER_LBL">BID</string>
+<string name="QUOTE_OFFER_HEADER_LBL">OFFER</string>
+<string name="QUOTE_BUY_BTN">BUY</string>
+<string name="QUOTE_SELL_BTN">SELL</string>
+
+<string name="WAT_MYWATCHLISTS_HEADER_LBL">MY WATCHLIST</string>
+<string name="WAT_EDIT_BTN">EDIT</string>
+<string name="WAT_STOCK_LBL">Stock</string>
+<string name="WAT_LAST_LBL">Last</string>
+<string name="WAT_CHG_LBL">Chg</string>
+<string name="WAT_BUY_LBL">Buy</string>
+
+<string name="WAT_EDITWATCHLISTS_HEADER_LBL">EDIT WATCHLISTS</string>
+<string name="WAT_EW_ADDGROUP_LBL">ADD GROUP</string>
+<string name="WAT_EW_DELETESTOCKGROUP_LBL">DELETE STOCK &amp GROUP</string>
+<string name="WAT_EW_DELETEGROUP_BTN">DELETE GROUP</string>
+<string name="WAT_EW_DELETESTOCK_BTN">DELETE STOCK</string>
+<string name="WAT_EW_AVAILABLEGROUPS_LBL">AVAILABLE GROUPS</string>
+<string name="WAT_EW_STOCKLIST_LBL">STOCK LIST</string>
+
+<string name="TS_HEADING_LBL">TOP STOCKS</string>
+<string name="TS_TOP_VOL">Top Volume</string>
+<string name="TS_TOP_GANIERS">Top Gainers</string>
+<string name="TS_TOP_LOSERS">Top Losers</string>
+<string name="TS_TOP_GANIERS_PER">Top Gainers %</string>
+<string name="TS_TOP_LOSERS_PER">Top Losers %</string>
+<string name="TS_TOP_FRGN_NET_BUY">Top Foreign Net Buy</string>
+<string name="TS_TOP_FRGN_NET_SELL">Top Foreign Net Sell</string>
+<string name="TS_LASTUPDATE_LBL">Last Updated:</string>
+<string name="TS_CODE_LBL">Code</string>
+<string name="TS_VOLUME_LBL">Volume</string>
+<string name="TS_LAST_LBL">Last</string>
+<string name="TS_CHANGE_LBL">Change</string>
+<string name="TS_CHANGEPER_LBL">Change%</string>
+<string name="TS_FRGN_NETBUY_LBL">F.Net Buy</string>
+<string name="TS_FRGN_BUY_VAL_LBL">F.Buy Val</string>
+<string name="TS_FRGN_SELL_VAL_LBL">F.Sell Val</string>
+<string name="TS_FRGN_NETSELL_LBL">F.Net Sell</string>
+
+<string name="ORDER_PAD_BUY_HEADING_LBL">ORDER PAD - BUY</string>
+<string name="ORDER_PAD_SELL_HEADING_LBL">ORDER PAD - SELL</string>
+<string name="ORDER_PAD_VIEWLMTS_HEADING_LBL">VIEW LIMITS</string>
+<string name="ORDER_PAD_SELECT_STOCK_LBL">Select Stock</string>
+<string name="ORDER_PAD_TRXN_LBL">Transaction</string>
+<string name="ORDER_PAD_PRICE_LBL">Price(IDR)</string>
+<string name="ORDER_PAD_QTY_LBL">Qty(lots)</string>
+<string name="ORDER_PAD_SESSION_LBL">Session</string>
+<string name="ORDER_PAD_CLNT_CODE_LBL">Client Code</string>
+<string name="ORDER_PAD_GROSS_VAL_LBL">Gross Value</string>
+<string name="ORDER_PAD_ENTER_TRADE_PIN">Enter Trade pin</string>
+<string name="ORDER_PAD_VIEWLMTS_LBL">View Limits</string>
+<string name="ORDER_PAD_AVL_QTY_LBL">Available Qty (lots)</string>
+<string name="ORDER_PAD_FUNDING_AVL_LBL">Funding Available (IDR)</string>
+<string name="ORDER_PAD_SESSION_DAY_LBL">Whole day</string>
+<string name="ORDER_PAD_SESSION_SESSION_LBL">Session</string>
+<string name="ORDER_QUEUE_CODE">Code</string>
+<string name="ORDER_QUEUE_EXCHANGE_ORDER_NO">Exchange order No</string>
+<string name="ORDER_QUEUE_TIME">Time</string>
+<string name="ORDER_QUEUE_TYPE">Type</string>
+<string name="ORDER_QUEUE_FD">F/D</string>
+<string name="ORDER_QUEUE_BROKER">Broker</string>
+<string name="ORDER_QUEUE_PRICE">Price</string>
+<string name="ORDER_QUEUE_QTY">Qty</string>
+<string name="ORDER_QUEUE_BAL_QTY">Bal. Qty</string>
+<string name="ORDER_QUEUE_LEVEL">Level</string>
+<string name="ORDER_QUEUE_QUEUE_NO">Queue#</string>
+<string name="ORDER_QUEUE_QUEUE_LOTS">Queue Lots</string>
+<string name="ORDER_QUEUE_NQUEUE">NQueue</string>
+<string name="ORDER_QUEUE_NLOTS">NLots</string>
+<string name="ORDER_QUEUE_STATUS">Status</string>
+<string name="TD_HEADING_LBL">Trade Details</string>
+<string name="TD_CODE_LBL">Code</string>
+<string name="TD_BVAL_LBL">B.Val</string>
+<string name="TD_BLOT_LBL">B.Lot</string>
+<string name="TD_SVAL_LBL">S.Val</string>
+<string name="TD_SLOT_LBL">S.Lot</string>
+<string name="TD_NVAL_LBL">N.Val</string>
+<string name="TD_NLOT_LBL">N.Lot</string>
+<string name="TD_BAVG_LBL">B.Avg</string>
+<string name="TD_SAVG_LBL">S.Avg</string>
+<string name="TD_BFREQ_LBL">B.Freq</string>
+<string name="TD_SFREQ_LBL">S.Freq</string>
+<string name="TD_TVAL_LBL">T.Val</string>
+<string name="TD_TLOT_LBL">T.Lot</string>
+<string name="TD_BY_BROKER_LBL">BY BROKER</string>
+<string name="TD_BY_STOCK_LBL">BY STOCK</string>
+<string name="TD_TOTAL_BUY_SELL_VALUE">Total Buy &amp Sell Value</string>
+<string name="TNC_TEXT">"Mengacu pada Syarat dan Ketentuan Formulir Pembukaan Rekening dan Perjanjian Nasabah berserta Term &amp Condition Online Trading yang ditandatangani dan disetujui antara PT RHB OSK Securities Indonesia (selanjutnya disebut “RHB OSK”) dengan nasabah-nasabah (“Nasabah”) atau wakil/kuasanya yang sah, dengan ini Nasabah mengerti dan menyetujui isi syarat dan ketentuan pelaksanaan transaksi pasar modal melalui layananyang disediakan oleh RHB OSK . 
+
+A.        DEFINISI
+“Mobile Trading” berarti layanan yang disediakan oleh RHB OSK bagi Nasabah untuk melakukan transaksi perdagangan saham berupa pembelian/penjualan, perubahan order pembelian/penjualan, pembatalan order pembelian/penjualan, informasi status order yang telah dikirim ke Bursa dan memperoleh informasi pasar modal dengan mempergunakan Handphone atau Tablet jenis tertentu.
+
+
+B.PERNYATAAN NASABAH
+1.        Nasabah dengan ini bertanggung jawab penuh dan membebaskan RHB OSK dari segala tuntutan atas pengiriman User ID, Trading ID dan Password melalui surat elektronik (e-mail) sesuai dengan alamat e-mail yang tercantum dalam Rekening atau Formulir atas nama Nasabah.
+2.        Nasabah bertanggung jawab atas keabsahan dan kebenaran order yang dilakukan melalui RHBINVEST berdasarkan data yang diterima oleh sistem komputer RHB OSK tanpa memerlukan tandatangan Nasabah dan merupakan bukti yang sah dan mengikat Nasabah dan RHB OSK. Setiap order beli atau jual yang telah berhasil dilakukan akan memperoleh JATS Order ID dari bursa sedangkan order yang telah match akan memperoleh JATS Trade ID
+3.        RHB OSK berhak membatasi dan menghentikan akses Nasabah dalam menggunakan RHBINVEST setiap saat tanpa pemberitahuan terlebih dahulu dan tanpa alasan apapun, termasuk tidak terbatas pada pemeliharaan dan perbaikan sistem, pelanggaran terhadap ketentuan yang diatur dalam Syarat dan Ketentuan ini atau persetujuan lain antara RHB OSK dengan Nasabah dan/atau penggunaan akses Nasabah oleh pihak yang tidak berhak.
+4.        RHBINVEST akan diberikan oleh RHB OSK kepada Nasabah “sebagaimana telah dibentuk” dan oleh karenanya penggunaan RHBINVEST oleh Nasabah merupakan resiko Nasabah sendiri. Berita, data, fakta dan pandangan, pendapat rekomendasi individu dan organisasi dalam jasa/atau produk, dan informasi yang ada dalam RHBINVEST diperoleh dari berbagai sumber, yang diyakini dapat diandalkan tetapi dapat diubah atau diperbaharui sewaktu-waktu tanpa adanya pemberitahuan terlebih dahulu kepada Nasabah. Tidak satupun informasi tersebut Nasabah peroleh yang menyatakan suatu permintaan dari RHB OSK atau permintaan bahwa Nasabah harus membeli atau menjual efek tertentu pada jumlah tertentu atau semuanya.
+5.        Nasabah dengan ini membebaskan RHB OSK dari segala bentuk tangung jawab atas kerugian dan kerusakan yang terjadi baik secara langsung maupun tidak langsung dari penggunaan RHBINVEST yang diakibatkan oleh segala gangguan, penghapusan kesalahan, penundaan pengoperasian atau transmisi, virus komputer, kerusakan jaringan komunikasi, pencurian atau perusakan, memperoleh secara tidak sah, perubahan atau penggunaan informasi.
+6.        Dengan tetap memperhatikan Rekening dan RHBINVEST, Nasabah dengan ini menyetujui bahwa Syarat dan Ketentuan ini akan berlaku dan mengikat Nasabah, termasuk namun tidak terbatas pada transaksi, konfirmasi, laporan akun (rekening) dan untuk itu, Nasabah melepaskan RHB OSK maupun afiliasi, direktur, pegawai, pemegang saham, agen maupun pihak yang terkait dari setiap tuntutan dan kerugian yang mungkin timbul daripadanya.
+
+C.        PENGGUNAAN RHBINVEST
+1.        Nasabah wajib memastikan ketepatan dan kelengkapan perintah transaksi (termasuk memastikan bahwa semua data yang diperlukan untuk transaksi telah diisi secara lengkap dan benar) sesuai format perintah menu layanan yang telah ditentukan oleh RHB OSK. RHB OSK tidak bertanggung jawab  terhadap segala dampak apapun yang mungkin timbul yang diakibatkan kelalaian, ketidaktepatan dan/atau ketidak lengkapan perintah/data dari Nasabah.
+2.        Setiap instruksi yang telah dikirim oleh Nasabah berdasarkan username, password dan trading pin yang tersimpan pada pusat data RHB OSK merupakan data yang benar yang diterima sebagai bukti perintah dari Nasabah kepada RHB OSK untuk melaksanakan transaksi yang dimaksud.
+3.  Tombol pemberitahuan (push notifications) tidak dijamin akan sampai, dan mungkin akan tertunda. Nasabah dimohon merujuk pada konfirmasi perdagangan harian untuk verifikasi transaksi Anda.
+4.        RHB OSK berhak untuk tidak melaksanakan perintah dari Nasabah, apabila RHB OSK mengetahui atau mempunyai alasan untuk menduga bahwa penipuan atau aksi kejahatan telah atau akan dilakukan.
+5. RHB OSK berhak menghentikan layanan RHBINVEST untuk sementara waktu maupun untuk jangka waktu tertentu yang ditentukan oleh RHB OSK untuk keperluan pembaharuan, pemeliharaan atau untuk tujuan lain dengan alasan apa pun yang dianggap baik oleh RHB OSK dan untuk itu RHB OSK tidak wajib bertanggung jawab terhadap dan kepada siapa pun.
+6. Nasabah tidak diperkenankan mengalihkan layanan RHBINVEST ini kepada pihak 
+     lain tanpa persetujuan tertulis dari RHB OSK.
+
+
+D.        PELAKSANAAN TRANSAKSI
+        RHB OSK tidak bertanggung jawab atas segala keterlambatan dalam melaksanakan order Nasabah baik untuk membeli atau menjual efek yang dihasilkan dari kebutuhan untuk memperoleh persetujuan sebelumnya dari pejabat berwenang sebelum terjadinya peristiwa atau sebab-sebab lain diluar kekuasaan RHB OSK. Apabila terjadi perubahan pasar yang ketat dan cepat, RHB OSK hanya akan melaksanakan order nasabah atas dasar usaha terbaik. Dalam masa perubahan pasar yang tidak biasa dan volume yang perdaganganyang tinggi, RHB OSK atas kebijaksanaannya sendiri dapat membatasi dan memperketat jenis order yang diterima dari nasabah.
+        
+        
+E.        PENGHENTIAN AKSES LAYANAN RHBINVEST
+1.        Akses layanan RHBINVEST akan dihentikan oleh RHB OSK apabila :
+Nasabah meminta kepada RHB OSK untuk menghentikan akses layanan RHBINVEST sementara waktu atau secara permanen, antara lain disebabkan oleh:
+-        Ponsel diganti/hilang/dicuri/ dipindah tangankan kepada pihak lain atau Nasabah tidak memiliki alamat email lagi dan hal-hal tersebut telah diberitahukan kepada RHB OSK,
+-        Nasabah  salah memasukkan Password secara berturut-turut yang ditentukan oleh RHB OSK,
+-        Nasabah menutup Rekening yang dapat diakses melalui layanan RHBINVEST.
+2. Untuk melakukan aktivasi kembali karena penghentian akses layanan tersebut di atas, Nasabah harus menghubungi Call Center atau melakukan pendaftaran ulang melalui kantor pusat atau Cabang. 
+
+F.        BIAYA-BIAYA
+Biaya penggunaan RHBINVEST akan ditentukan oleh RHB OSK dan RHB OSK berhak sepenuhnya untuk mengubah biaya penggunaan RHBINVEST. RHB OSK akan mendebet biaya-biaya tersebut dari Rekening Nasabah.
+
+
+G.        FORCE MAJEURE
+Nasabah membebaskan RHB OSK dari segala bentuk tanggung jawab atas segala kerugian yang terjadi baik langsung maupun tidak langsung atas sebab-sebab diluar kendali RHB OSK (peristiwa force majeure/keadaan memaksa), termasuk namun tidak terbatas atas pembatasan Pemerintah, bencana alam, perang, pemogokan atau aturan bursa, gangguan atas pelayanan proses data dan komunikasi atau gangguan atas pedagangan yang normal di bursa, segala gangguan virus komputer atau system atau komponen membahayakan yang dapat mengganggu layanan RHBINVEST, web browser atau komputer sistem RHB OSK atau Nasabah atau internet.
+
+H.        LAIN-LAIN
+1.        Bukti perintah Nasabah melalui layanan RHBINVEST adalah mutasi yang tercatat dalam laporan rekening harian dan laporan rekening bulanan yang dikirim RHB OSK kealamat Nasabah. 
+2.        Nasabah dapat menghubungi Call Center atau Cabang atas setiap permasalahan yang berkaitan dengan transaksi dan perubahan akses layanan RHBINVEST.
+3.        RHB OSK berhak sepenuhnya dari waktu kewaktu memperbaharui, merevisi atau mengubah Syarat dan Ketentuan ini atau mengubah atau menghentikan suatu bagian atau fitur tanpa pemberitahuan terlebih dahulu kepada Nasabah
+4.        Semua pemberitahuan yang disampaikan dengan menggunakan peralatan elektronik adalah sah dikeluarkan oleh RHB OSK dan merupakan satu kesatuan yang terpisahkan dari Syarat dan Ketentuan ini serta Rekening.
+5.   Nasabah wajib menyampaikan dengan segera dan secara tertulis kepada RHB OSK setiap perubahan data atau informasi pribadi yang telah disampaikan dalam Formulir Pembukaan Rekening.
+6.        Kuasa-kuasa baik yang tersurat maupun tersirat dalam Syarat dan Ketentuan ini merupakan kuasa yang sah yang tidak akan berakhir selama Nasabah masih memperoleh layanan RHBINVEST atau masih adanya kewajiban lain dari Nasabah kepada RHB OSK.
+
+Dengan membaca ketentuan-ketentuan di atas, Nasabah menyatakan mengerti dan menyetujui pemberlakuan ketentuan-ketentuan di atas.
+
+"</string>
+
+
+</resources>

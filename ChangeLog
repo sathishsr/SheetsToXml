@@ -1,0 +1,11 @@
+Version - 1.0.0 (Oct 1' 2012)
+Initial Version
+
+Version - 1.0.1 (Oct 11'2012)
+1. The command window will not close after successful completion. Press any key to close the window
+
+2. Validation for duplicate keys and white space added.
+
+3. Files for Admin console removed, as they no longer use it.
+
+4. Strings.xml format corrected

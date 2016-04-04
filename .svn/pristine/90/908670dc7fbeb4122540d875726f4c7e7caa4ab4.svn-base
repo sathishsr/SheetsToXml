@@ -1,0 +1,8 @@
+package com.msf.kmb;
+
+public interface LabelConfig {
+
+String USER_NAME="USER_NAME";
+
+
+}

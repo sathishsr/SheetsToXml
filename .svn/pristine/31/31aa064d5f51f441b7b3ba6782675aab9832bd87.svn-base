@@ -1,0 +1,394 @@
+package com.marketSimplified.labelGenerator;
+
+import java.io.BufferedReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import com.google.api.client.auth.oauth2.Credential;
+import com.google.gdata.client.spreadsheet.SpreadsheetService;
+import com.google.gdata.data.spreadsheet.CellEntry;
+import com.google.gdata.data.spreadsheet.CellFeed;
+import com.google.gdata.data.spreadsheet.ListEntry;
+import com.google.gdata.data.spreadsheet.ListFeed;
+import com.google.gdata.data.spreadsheet.SpreadsheetFeed;
+import com.google.gdata.data.spreadsheet.WorksheetEntry;
+import com.google.gdata.data.spreadsheet.WorksheetFeed;
+import com.google.gdata.util.ServiceException;
+
+/**
+ * @author sathishsr
+ *
+ */
+public class SpreadSheetToXml {
+
+	private static URL listFeedUrl;
+
+	private static StringBuffer constants = new StringBuffer();
+	private static StringBuffer stringsXML = new StringBuffer();
+	// static StringBuffer configjson = new StringBuffer();
+	private static StringBuffer stringsplist = new StringBuffer();
+
+	private static StringBuffer win8XML = new StringBuffer();
+	private static StringBuffer win81XML = new StringBuffer();
+	private static StringBuffer labelconfig = new StringBuffer();
+	private static StringBuffer duplicateKeys = new StringBuffer();
+	private static ArrayList<String> keyList = new ArrayList<String>();
+	private static final String QUOTE = "\"";
+
+	private static String KEY_COLUMN_NAME = "key";
+	private static String VALUE_COLUMN_NAME = "value";
+	private static String DYNAMIC_COLUMN_NAME = "isdynamicyesno";
+	private static String BBVALUES_COLUMN_NAME = "bbvalues";
+	private static String CONSTANTS_PACKAGE = "com.msf.kmb";
+
+	private static String STRINGS_XML_PATH = "strings.xml";
+	private static String STRINGS_PLIST_PATH = "Localizable.strings";
+	private static String CONSTANTS_PATH = "LabelConfig.java";
+	private static String LABEL_PROPS_PATH = "labelconfig.properties";
+	private static String WINDOWS8_RES_PATH = "Proj.en-IN.resx";
+	private static String WINDOWS81_RES_PATH = "Proj.en-IN.resw";
+
+	private static boolean addedNewLine = false;
+
+	private static HashMap<String, String> stringsXMLMap = new HashMap<String, String>();
+
+	/**
+	 * 
+	 * @param credential
+	 * @throws IOException
+	 * @throws ServiceException
+	 */
+	static void printDocuments(Credential credential) throws IOException, ServiceException {
+		// Instantiate and authorize a new SpreadsheetService object.
+
+		SpreadsheetService service = new SpreadsheetService("LabelGenerator");
+		service.setOAuth2Credentials(credential);
+		// Send a request to the Documents List API to retrieve document
+		// entries.
+		URL SPREADSHEET_FEED_URL = new URL("https://spreadsheets.google.com/feeds/spreadsheets/private/full");
+		// Make a request to the API and get all spreadsheets.
+		SpreadsheetFeed feed = service.getFeed(SPREADSHEET_FEED_URL, SpreadsheetFeed.class);
+		List<com.google.gdata.data.spreadsheet.SpreadsheetEntry> spreadsheets = feed.getEntries();
+		if (spreadsheets.isEmpty()) {
+			System.out.println("No SpreadSheets available.");
+		}
+
+		// com.google.gdata.data.spreadsheet.SpreadsheetEntry spreadsheet =
+		// spreadsheets.get(0);
+		// System.out.println(spreadsheet.getTitle().getPlainText());
+		// Get the first worksheet of the first spreadsheet.
+
+		Preferences.loadConfig();
+		STRINGS_XML_PATH = Preferences.getStringsXmlPath();
+		STRINGS_PLIST_PATH = Preferences.getLocalizablePath();
+		for (com.google.gdata.data.spreadsheet.SpreadsheetEntry spreadsheet : spreadsheets) {
+			if (Preferences.getSheetname().equals(spreadsheet.getTitle().getPlainText())) {
+
+				WorksheetFeed worksheetFeed = service.getFeed(spreadsheet.getWorksheetFeedUrl(), WorksheetFeed.class);
+				List<WorksheetEntry> worksheets = worksheetFeed.getEntries();
+				WorksheetEntry worksheet = worksheets.get(0);
+
+				if (spreadsheet.getWorksheets().size() >= 1) {
+					listFeedUrl = spreadsheet.getWorksheets().get(0).getListFeedUrl();
+				}
+
+				// Fetch the cell feed of the worksheet.
+				URL cellFeedUrl = worksheet.getCellFeedUrl();
+				CellFeed cellFeed = service.getFeed(cellFeedUrl, CellFeed.class);
+
+				// Iterate through each cell, printing its value.
+				for (CellEntry cell : cellFeed.getEntries()) {
+					// Print the cell's address in A1 notation
+					System.out.print(cell.getTitle().getPlainText() + "\t");
+					// Print the cell's address in R1C1 notation
+					System.out.print(cell.getId().substring(cell.getId().lastIndexOf('/') + 1) + "\t");
+					// Print the cell's formula or text value
+					System.out.print(cell.getCell().getInputValue() + "\t");
+					// Print the cell's calculated value if the cell's value is
+					// numeric
+					// Prints empty string if cell's value is not numeric
+					System.out.print(cell.getCell().getNumericValue() + "\t");
+					// Print the cell's displayed value (useful if the cell has
+					// a
+					// formula)
+					System.out.println(cell.getCell().getValue() + "\t");
+				}
+				processAllEntries(service);
+
+			}
+		}
+
+	}
+
+	/**
+	 * 
+	 * @param service
+	 * @throws IOException
+	 * @throws ServiceException
+	 */
+	public static void processAllEntries(SpreadsheetService service) throws IOException, ServiceException {
+		ListFeed listFeed = service.getFeed(listFeedUrl, ListFeed.class);
+		constants.append("package ").append(CONSTANTS_PACKAGE).append(";\n\npublic interface LabelConfig {\n\n");
+		stringsXML.append("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" + "<resources>\n");
+
+		win8XML.append("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" + "<root>\n"
+				+ "<xsd:schema id=\"root\" xmlns=\"\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:msdata=\"urn:schemas-microsoft-com:xml-msdata\">\n"
+				+ "<xsd:import namespace=\"http://www.w3.org/XML/1998/namespace\" />\n"
+				+ "<xsd:element name=\"root\" msdata:IsDataSet=\"true\">\n" + "<xsd:complexType>\n"
+				+ "<xsd:choice maxOccurs=\"unbounded\">\n" + "<xsd:element name=\"metadata\">\n" + "<xsd:complexType>\n"
+				+ "<xsd:sequence>\n" + "<xsd:element name=\"value\" type=\"xsd:string\" minOccurs=\"0\" />\n"
+				+ " </xsd:sequence>\n" + "<xsd:attribute name=\"name\" use=\"required\" type=\"xsd:string\" />\n"
+				+ "<xsd:attribute name=\"type\" type=\"xsd:string\" />\n"
+				+ "<xsd:attribute name=\"mimetype\" type=\"xsd:string\" />\n" + "<xsd:attribute ref=\"xml:space\" />\n"
+				+ "  </xsd:complexType>\n" + "</xsd:element>\n" + "<xsd:element name=\"assembly\">\n"
+				+ "<xsd:complexType>\n" + "<xsd:attribute name=\"alias\" type=\"xsd:string\" />\n"
+				+ "<xsd:attribute name=\"name\" type=\"xsd:string\" />\n" + " </xsd:complexType>\n"
+				+ " </xsd:element>\n" + "<xsd:element name=\"data\">\n" + "<xsd:complexType>\n" + "<xsd:sequence>\n"
+				+ "<xsd:element name=\"value\" type=\"xsd:string\" minOccurs=\"0\" msdata:Ordinal=\"1\" />\n"
+				+ "<xsd:element name=\"comment\" type=\"xsd:string\" minOccurs=\"0\" msdata:Ordinal=\"2\" />\n"
+				+ " </xsd:sequence>\n"
+				+ "<xsd:attribute name=\"name\" type=\"xsd:string\" use=\"required\" msdata:Ordinal=\"1\" />\n"
+				+ "<xsd:attribute name=\"type\" type=\"xsd:string\" msdata:Ordinal=\"3\" />\n"
+				+ "<xsd:attribute name=\"mimetype\" type=\"xsd:string\" msdata:Ordinal=\"4\" />\n"
+				+ "<xsd:attribute ref=\"xml:space\" />\n" + " </xsd:complexType>\n" + "</xsd:element>\n"
+				+ "<xsd:element name=\"resheader\">\n" + "<xsd:complexType>\n" + "<xsd:sequence>\n"
+				+ "<xsd:element name=\"value\" type=\"xsd:string\" minOccurs=\"0\" msdata:Ordinal=\"1\" />\n"
+				+ "</xsd:sequence>\n" + "<xsd:attribute name=\"name\" type=\"xsd:string\" use=\"required\" />\n"
+				+ " </xsd:complexType>\n" + " </xsd:element>\n" + " </xsd:choice>\n" + "  </xsd:complexType>\n"
+				+ " </xsd:element>\n" + "</xsd:schema>\n" + "<resheader name=\"resmimetype\">\n"
+				+ "  <value>text/microsoft-resx</value>\n" + " </resheader>\n" + "<resheader name=\"version\">\n"
+				+ " <value>2.0</value>\n" + "</resheader>\n" + " <resheader name=\"reader\">\n"
+				+ " <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>\n"
+				+ "</resheader>\n" + "<resheader name=\"writer\">\n"
+				+ " <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>\n"
+				+ "  </resheader>\n");
+
+		win81XML.append("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" + "<root>\n"
+				+ "<xsd:schema id=\"root\" xmlns=\"\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:msdata=\"urn:schemas-microsoft-com:xml-msdata\">\n"
+				+ "<xsd:import namespace=\"http://www.w3.org/XML/1998/namespace\" />\n"
+				+ "<xsd:element name=\"root\" msdata:IsDataSet=\"true\">\n" + "<xsd:complexType>\n"
+				+ "<xsd:choice maxOccurs=\"unbounded\">\n" + "<xsd:element name=\"metadata\">\n" + "<xsd:complexType>\n"
+				+ "<xsd:sequence>\n" + "<xsd:element name=\"value\" type=\"xsd:string\" minOccurs=\"0\" />\n"
+				+ " </xsd:sequence>\n" + "<xsd:attribute name=\"name\" use=\"required\" type=\"xsd:string\" />\n"
+				+ "<xsd:attribute name=\"type\" type=\"xsd:string\" />\n"
+				+ "<xsd:attribute name=\"mimetype\" type=\"xsd:string\" />\n" + "<xsd:attribute ref=\"xml:space\" />\n"
+				+ "  </xsd:complexType>\n" + "</xsd:element>\n" + "<xsd:element name=\"assembly\">\n"
+				+ "<xsd:complexType>\n" + "<xsd:attribute name=\"alias\" type=\"xsd:string\" />\n"
+				+ "<xsd:attribute name=\"name\" type=\"xsd:string\" />\n" + " </xsd:complexType>\n"
+				+ " </xsd:element>\n" + "<xsd:element name=\"data\">\n" + "<xsd:complexType>\n" + "<xsd:sequence>\n"
+				+ "<xsd:element name=\"value\" type=\"xsd:string\" minOccurs=\"0\" msdata:Ordinal=\"1\" />\n"
+				+ "<xsd:element name=\"comment\" type=\"xsd:string\" minOccurs=\"0\" msdata:Ordinal=\"2\" />\n"
+				+ " </xsd:sequence>\n"
+				+ "<xsd:attribute name=\"name\" type=\"xsd:string\" use=\"required\" msdata:Ordinal=\"1\" />\n"
+				+ "<xsd:attribute name=\"type\" type=\"xsd:string\" msdata:Ordinal=\"3\" />\n"
+				+ "<xsd:attribute name=\"mimetype\" type=\"xsd:string\" msdata:Ordinal=\"4\" />\n"
+				+ "<xsd:attribute ref=\"xml:space\" />\n" + " </xsd:complexType>\n" + "</xsd:element>\n"
+				+ "<xsd:element name=\"resheader\">\n" + "<xsd:complexType>\n" + "<xsd:sequence>\n"
+				+ "<xsd:element name=\"value\" type=\"xsd:string\" minOccurs=\"0\" msdata:Ordinal=\"1\" />\n"
+				+ "</xsd:sequence>\n" + "<xsd:attribute name=\"name\" type=\"xsd:string\" use=\"required\" />\n"
+				+ " </xsd:complexType>\n" + " </xsd:element>\n" + " </xsd:choice>\n" + "  </xsd:complexType>\n"
+				+ " </xsd:element>\n" + "</xsd:schema>\n" + "<resheader name=\"resmimetype\">\n"
+				+ "  <value>text/microsoft-resx</value>\n" + " </resheader>\n" + "<resheader name=\"version\">\n"
+				+ " <value>2.0</value>\n" + "</resheader>\n" + " <resheader name=\"reader\">\n"
+				+ " <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>\n"
+				+ "</resheader>\n" + "<resheader name=\"writer\">\n"
+				+ " <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>\n"
+				+ "  </resheader>\n");
+
+		System.out.println("\nIterating through " + listFeed.getTotalResults() + " labels...");
+		for (ListEntry entry : listFeed.getEntries()) {
+			processEachEntry(entry);
+		}
+		constants.append("\n\n}");
+		win8XML.append("</root>");
+		win81XML.append("</root>");
+		System.out.println("\nProcessed all data...");
+
+	}
+
+	/**
+	 * 
+	 * @param entry
+	 */
+	public static void processEachEntry(ListEntry entry) {
+
+		win8XML.append("");
+		win81XML.append("");
+
+		String key = null;
+		String value = null;
+		String dynamic = null;
+		String bbValue = null;
+		for (String tag : entry.getCustomElements().getTags()) {
+
+			if (tag.equals(KEY_COLUMN_NAME)) {
+				key = entry.getCustomElements().getValue(tag);
+				// System.out.println("Key: "+key);
+			}
+			if (key != null && tag.equals(VALUE_COLUMN_NAME)) {
+				value = entry.getCustomElements().getValue(tag);
+				// System.out.println("Value:
+				// "+entry.getCustomElements().getValue(tag));
+			}
+			if (value != null && tag.equals(DYNAMIC_COLUMN_NAME)) {
+				dynamic = entry.getCustomElements().getValue(tag);
+			}
+			if (key != null && tag.equals(BBVALUES_COLUMN_NAME)) {
+				bbValue = entry.getCustomElements().getValue(tag);
+				;
+			}
+		}
+
+		if (key != null && key.trim().length() != 0) {
+			boolean isdynamic = "Yes".equalsIgnoreCase(dynamic);
+			key = key.trim();
+			key = key.replace(" ", "");
+			if (key.contains(" ")) {
+				System.out.println(
+						"The following Key contain white-space " + key + "\n\nPress any key to exit the tool..");
+				getUserInput();
+				System.exit(1);
+			}
+			if (keyList.contains(key)) {
+				duplicateKeys.append(key).append("\n");
+			} else
+				keyList.add(key);
+			if (value != null) {
+				value = value.trim();
+				// Replaces &
+				value = (value.contains("&")) ? value.replace("&", "&amp;") : value;
+				// Replaces '
+				if (value.contains("'"))
+					value = value.replace("'", "\\&apos;");
+				// Replaces ""
+				if (value.contains("\""))
+					value = value.replace("\"", "&#34;");
+				// Replaces ©
+				if (value.contains("©"))
+					value = value.replace("©", "&#169;");
+				// Replaces ™
+				if (value.contains("™"))
+					value = value.replace("™", "&#8482;");
+				// Replaces ...
+				if (value.contains("..."))
+					value = value.replace("...", "&#8230;");
+				// Replaces Ⓡ
+				if (value.contains("Ⓡ"))
+					value = value.replace("Ⓡ", "&#174;");
+				//Replaces ₹
+				if(value.contains("₹"))
+					value=value.replace("₹", "\u20b9");
+				if (!isdynamic) {
+					value = changeSpecial(value);
+					stringsXML.append("<string name=\"").append(key).append("\">").append(value).append("</string>\n");
+					stringsplist.append(QUOTE).append(key).append(QUOTE).append("=").append(QUOTE).append(value)
+							.append(QUOTE).append(";\n");
+
+				} else {
+					// configjson.append("{\"key\":\"").append(key)
+					// .append("\",\"value\":\"").append(value)
+					// .append("\"},\n");
+				}
+
+				win8XML.append("<data name=").append(QUOTE).append(key).append(QUOTE).append(" xml:space=")
+						.append(QUOTE).append("preserve").append(QUOTE).append(">\n").append("<value>").append(value)
+						.append("</value>\n").append("</data>\n");
+
+				win81XML.append("<data name=").append(QUOTE).append(key).append(".Text").append(QUOTE)
+						.append(" xml:space=").append(QUOTE).append("preserve").append(QUOTE).append(">\n")
+						.append("<value>").append(value).append("</value>\n").append("</data>\n");
+
+			}
+			String temp = bbValue != null ? bbValue.trim() : value;
+			if (key.length() != 0 && temp != null) {
+				labelconfig.append(key).append(" = ").append(temp).append("\n");
+			}
+			if (key.length() != 0) {
+				constants.append("String ").append(key).append("=").append(QUOTE).append(key).append(QUOTE)
+						.append(";\n");
+			}
+			addedNewLine = false;
+		} else if (!addedNewLine) {
+			addedNewLine = true;
+			stringsXML.append("\n");
+			// configjson.append("\n");
+			stringsplist.append("\n");
+			constants.append("\n");
+			labelconfig.append("\n");
+			win8XML.append("\n");
+			win81XML.append("\n");
+		}
+	}
+
+	/**
+	 * 
+	 * @param value
+	 * @return String
+	 */
+	private static String changeSpecial(String value) {
+		for (String key : stringsXMLMap.keySet()) {
+
+			value = value.replace(key, stringsXMLMap.get(key));
+		}
+
+		return value;
+	}
+
+	/**
+	 * Get user Inputs
+	 */
+	private static void getUserInput() {
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		try {
+			reader.readLine();
+		} catch (IOException e) {
+
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * 
+	 * @throws IOException
+	 */
+	public static void writeToFile() throws IOException {
+		stringsXML.append("\n\n</resources>");
+		writeToFile(STRINGS_XML_PATH, stringsXML.toString());
+		System.out.println("\nProcessed file " + STRINGS_XML_PATH);
+		// writeToFile(CONFIG_JSON_PATH, configjson.toString());
+		// System.out.println("\nProcessed file " + CONFIG_JSON_PATH);
+		writeToFile(STRINGS_PLIST_PATH, stringsplist.toString());
+		System.out.println("\nProcessed file " + STRINGS_PLIST_PATH);
+		writeToFile(CONSTANTS_PATH, constants.toString());
+		System.out.println("\nProcessed file " + CONSTANTS_PATH);
+		writeToFile(LABEL_PROPS_PATH, labelconfig.toString());
+		System.out.println("\nProcessed file " + LABEL_PROPS_PATH);
+		writeToFile(WINDOWS8_RES_PATH, win8XML.toString());
+		System.out.println("\nProcessed file " + WINDOWS8_RES_PATH);
+
+		writeToFile(WINDOWS81_RES_PATH, win81XML.toString());
+		System.out.println("\nProcessed file " + WINDOWS81_RES_PATH);
+
+		if (duplicateKeys.length() > 0) {
+			System.out.println("\nWARNING  DUPLICATE KEYS FOUND :\n" + duplicateKeys);
+		}
+	}
+
+	/**
+	 * 
+	 * @param filePath
+	 * @param contents
+	 * @throws IOException
+	 */
+	private static void writeToFile(String filePath, String contents) throws IOException {
+		FileWriter pw = new FileWriter(filePath);
+		pw.write(contents);
+		pw.flush();
+		pw.close();
+	}
+}

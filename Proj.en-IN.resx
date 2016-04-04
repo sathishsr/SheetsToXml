@@ -1,0 +1,1874 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+<xsd:element name="root" msdata:IsDataSet="true">
+<xsd:complexType>
+<xsd:choice maxOccurs="unbounded">
+<xsd:element name="metadata">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="value" type="xsd:string" minOccurs="0" />
+ </xsd:sequence>
+<xsd:attribute name="name" use="required" type="xsd:string" />
+<xsd:attribute name="type" type="xsd:string" />
+<xsd:attribute name="mimetype" type="xsd:string" />
+<xsd:attribute ref="xml:space" />
+  </xsd:complexType>
+</xsd:element>
+<xsd:element name="assembly">
+<xsd:complexType>
+<xsd:attribute name="alias" type="xsd:string" />
+<xsd:attribute name="name" type="xsd:string" />
+ </xsd:complexType>
+ </xsd:element>
+<xsd:element name="data">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+ </xsd:sequence>
+<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+<xsd:attribute ref="xml:space" />
+ </xsd:complexType>
+</xsd:element>
+<xsd:element name="resheader">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+</xsd:sequence>
+<xsd:attribute name="name" type="xsd:string" use="required" />
+ </xsd:complexType>
+ </xsd:element>
+ </xsd:choice>
+  </xsd:complexType>
+ </xsd:element>
+</xsd:schema>
+<resheader name="resmimetype">
+  <value>text/microsoft-resx</value>
+ </resheader>
+<resheader name="version">
+ <value>2.0</value>
+</resheader>
+ <resheader name="reader">
+ <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+</resheader>
+<resheader name="writer">
+ <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+<data name="APP_NAME" xml:space="preserve">
+<value>AngelEye</value>
+</data>
+<data name="TWO_FA_BLANK" xml:space="preserve">
+<value>2FA cannot be blank.</value>
+</data>
+<data name="TWO_FA_INCORRECT" xml:space="preserve">
+<value>Incorrect 2FA password.</value>
+</data>
+<data name="EXIT_APP_ALERT_MSG" xml:space="preserve">
+<value>Do you want to exit the application?</value>
+</data>
+<data name="AE_NO" xml:space="preserve">
+<value>No</value>
+</data>
+<data name="AE_YES" xml:space="preserve">
+<value>Yes</value>
+</data>
+<data name="AE_MORE" xml:space="preserve">
+<value>MORE</value>
+</data>
+<data name="NEW_PASS_CNF_PASS_SAME" xml:space="preserve">
+<value>New password and confirm password should be same.</value>
+</data>
+<data name="CHART_NO_DATA" xml:space="preserve">
+<value>No chart data available.</value>
+</data>
+<data name="WL_DEF_RENAME_ERROR" xml:space="preserve">
+<value>Default watchlist cannot be renamed.</value>
+</data>
+<data name="WL_DEF_DELETE_ERROR" xml:space="preserve">
+<value>Default watchlist cannot be deleted.</value>
+</data>
+<data name="WL_MAX_FIVE" xml:space="preserve">
+<value>Maximum of 5 Watchlist can be added.</value>
+</data>
+<data name="WL_RENAMED" xml:space="preserve">
+<value>Watchlist Renamed!</value>
+</data>
+<data name="WL_ALREADY_EXIST" xml:space="preserve">
+<value>Watchlist name already exists. Please choose some other name.</value>
+</data>
+<data name="WL_DELETE_WTCHLIST" xml:space="preserve">
+<value>Delete Watchlist.</value>
+</data>
+<data name="AE_OK" xml:space="preserve">
+<value>Ok</value>
+</data>
+<data name="app_name" xml:space="preserve">
+<value>Angel Eye</value>
+</data>
+<data name="WL_DELETED" xml:space="preserve">
+<value>Watchlist Deleted!</value>
+</data>
+<data name="WL_NAME_YOUR_WTCHLIST" xml:space="preserve">
+<value>Name your watchlist.</value>
+</data>
+<data name="WL_NAME_BLANK" xml:space="preserve">
+<value>Watchlist name cannot be Blank.</value>
+</data>
+<data name="WL_ADD_WTCHLIST" xml:space="preserve">
+<value>Add Watchlist</value>
+</data>
+<data name="FP_USERID_BLANK" xml:space="preserve">
+<value>User ID cannot be blank.</value>
+</data>
+<data name="FP_PANORMOB_BLANK" xml:space="preserve">
+<value>PAN or Mobile No cannot be blank.</value>
+</data>
+<data name="FP_INVALID_DETAILS" xml:space="preserve">
+<value>Invalid details provided</value>
+</data>
+
+<data name="LOGIN_ENTER_PWD" xml:space="preserve">
+<value>Please enter password</value>
+</data>
+<data name="LOGIN_ENTER_USERID" xml:space="preserve">
+<value>Please enter User ID</value>
+</data>
+<data name="LOGIN_PWD_MIN_MAX_ALLOWED" xml:space="preserve">
+<value>Password should be Min 6 and Max 12 characters.</value>
+</data>
+<data name="AE_LOGOUT_ALERT_MESSAGE" xml:space="preserve">
+<value>Do you want to logout?</value>
+</data>
+<data name="AE_LOGOUT_SUCCESS_MSG" xml:space="preserve">
+<value>Logout Successful.</value>
+</data>
+<data name="WL_ADD_SCRIP_ONE" xml:space="preserve">
+<value>Please add some scrip to this watchlist using the (Search) icon below</value>
+</data>
+<data name="WL_ADD_SCRIP_TWO" xml:space="preserve">
+<value>icon below or (click here) to add scrips.</value>
+</data>
+<data name="WL_SYM_DEL_SUCCESS" xml:space="preserve">
+<value>Symbol deleted successfully</value>
+</data>
+<data name="ORDERBOOK_CANCEL_ALERT_MSG" xml:space="preserve">
+<value>Are you sure you want to cancel the order?</value>
+</data>
+<data name="ORDERPAD_PRICE_EMPTY" xml:space="preserve">
+<value>Price cannot be empty</value>
+</data>
+<data name="ORDERPAD_TRIGGER_PRICE_EMPTY" xml:space="preserve">
+<value>Trigger price cannot be empty</value>
+</data>
+<data name="ORDERPAD_NO_HOLDINGS" xml:space="preserve">
+<value>No Holdings available</value>
+</data>
+<data name="ORDERPAD_TRIGGER_PRICE_ZERO" xml:space="preserve">
+<value>Trigger price cannot be zero</value>
+</data>
+<data name="ORDERPAD_PRICE_ZERO" xml:space="preserve">
+<value>Price cannot be zero</value>
+</data>
+<data name="POS_CON_SUB_SUCCESS" xml:space="preserve">
+<value>Conversion submitted successfully</value>
+</data>
+<data name="POS_ENTER_PRICE" xml:space="preserve">
+<value>Please enter price.</value>
+</data>
+<data name="POS_NO_POSITIONS" xml:space="preserve">
+<value>No position available</value>
+</data>
+<data name="AE_SESSION_EXPIRED" xml:space="preserve">
+<value>Session Expired.</value>
+</data>
+<data name="SETTINGS_WL_ALREADY_DEF" xml:space="preserve">
+<value>Selected watchlist is already default.</value>
+</data>
+<data name="SETTINGS_DEF_WL_SET" xml:space="preserve">
+<value>Default watchlist set!</value>
+</data>
+<data name="TRADEBOOK_PLACE_SOM_TRADES" xml:space="preserve">
+<value>Place some trades.</value>
+</data>
+<data name="FUNDTRAN_NO_TRANSACTIONS" xml:space="preserve">
+<value>No transactions available</value>
+</data>
+<data name="FUNDTRAN_WITHDRAWAL_ENTER_AMT" xml:space="preserve">
+<value>Please enter Amount</value>
+</data>
+<data name="FUNDTRAN_WITHDRAWAL_SUB_SUCCESS" xml:space="preserve">
+<value>Withdrawal request submitted successfully.</value>
+</data>
+
+<data name="MENU_MARKETS" xml:space="preserve">
+<value>Markets</value>
+</data>
+<data name="MENU_TRADING" xml:space="preserve">
+<value>Trading</value>
+</data>
+<data name="MENU_MKT_WATCH" xml:space="preserve">
+<value>Market Watch</value>
+</data>
+<data name="MENU_BUY_SELL" xml:space="preserve">
+<value>Buy - Sell</value>
+</data>
+<data name="MENU_ORDER_STATUS" xml:space="preserve">
+<value>Order Status</value>
+</data>
+<data name="MENU_POSITIONS" xml:space="preserve">
+<value>Positions</value>
+</data>
+<data name="MENU_HOLDINGS" xml:space="preserve">
+<value>Holdings</value>
+</data>
+<data name="MENU_LIMITS" xml:space="preserve">
+<value>Limits</value>
+</data>
+<data name="MENU_FUND_TRANSFER" xml:space="preserve">
+<value>Fund Transfer</value>
+</data>
+<data name="MENU_SETTINGS" xml:space="preserve">
+<value>Settings</value>
+</data>
+<data name="MENU_MORE" xml:space="preserve">
+<value>More</value>
+</data>
+
+<data name="AE_IDLE_TIME_OUT" xml:space="preserve">
+<value>You have been logged out as there was no activity since sometime</value>
+</data>
+
+<data name="ORDERPAD_ENTER_QTY" xml:space="preserve">
+<value>Please enter the quantity</value>
+</data>
+<data name="ORDERPAD_QTY_GT_ZERO" xml:space="preserve">
+<value>Quantity should be greater than zero.</value>
+</data>
+<data name="ORDERPAD_PRICE_MUL_TSZ_ONE" xml:space="preserve">
+<value>Order price should be multiples of tick size (Rs.</value>
+</data>
+<data name="ORDERPAD_PRICE_MUL_TSZ_TWO" xml:space="preserve">
+<value>) for that particular contract.</value>
+</data>
+<data name="ORDERPAD_TRIGGER_PRICE_MUL_TSZ_ONE" xml:space="preserve">
+<value>Trigger price should be multiples of tick size (Rs.</value>
+</data>
+<data name="ORDERPAD_AMO_ALERT_MSG" xml:space="preserve">
+<value>Your order will be placed as an AMO. would you like to proceed?</value>
+</data>
+<data name="ORDERPAD_DIS_QTY_MIN_DQ" xml:space="preserve">
+<value>Disclosed quantity should be less than or equal to minimum DQ percentage of the order quantity</value>
+</data>
+<data name="ORDERPAD_TRIGGER_PRICE_SL_BUY" xml:space="preserve">
+<value>Trigger price should be less than equal to limit price(order price) for SL-L buy order</value>
+</data>
+<data name="ORDERPAD_TRIGGER_PRICE_SL_SELL" xml:space="preserve">
+<value>Trigger price should be greater than limit price(order price) for SL-L sell order</value>
+</data>
+
+<data name="AE_HOME_ACTION_EXAMPLE" xml:space="preserve">
+<value>Example action</value>
+</data>
+<data name="AE_SETTINGS" xml:space="preserve">
+<value>Settings</value>
+</data>
+<data name="AE_NO_NETWORK" xml:space="preserve">
+<value>No Network Connection</value>
+</data>
+<data name="AE_TAB_SYMBOL_TXT" xml:space="preserve">
+<value>Symbol</value>
+</data>
+<data name="AE_TAB_SYMBOL_DETAILS" xml:space="preserve">
+<value>Details</value>
+</data>
+<data name="AE_TAB_LTP_TXT" xml:space="preserve">
+<value>LTP</value>
+</data>
+<data name="AE_LTP_SMALL" xml:space="preserve">
+<value>ltp</value>
+</data>
+<data name="AE_TAB_CHANGE_PERCENT" xml:space="preserve">
+<value>Change (%)</value>
+</data>
+<data name="AE_NSE_TEXT_CAPS" xml:space="preserve">
+<value>NSE</value>
+</data>
+<data name="AE_NSE_TEXT_SMALL" xml:space="preserve">
+<value>nse</value>
+</data>
+<data name="AE_BSE_TEXT_CAPS" xml:space="preserve">
+<value>BSE</value>
+</data>
+<data name="AE_BSE_TEXT_SMALL" xml:space="preserve">
+<value>bse</value>
+</data>
+<data name="AE_CANCEL" xml:space="preserve">
+<value>Cancel</value>
+</data>
+<data name="AE_RUPEES_SYMBOL" xml:space="preserve">
+<value>\u20B9</value>
+</data>
+<data name="AE_OK_CAPS" xml:space="preserve">
+<value>OK</value>
+</data>
+<data name="AE_OK_SMALL" xml:space="preserve">
+<value>Ok</value>
+</data>
+<data name="AE_EMPTY_SYMBOL_DATA" xml:space="preserve">
+<value>-</value>
+</data>
+<data name="AE_BUY_TEXT" xml:space="preserve">
+<value>BUY</value>
+</data>
+
+<data name="AE_DONE_TEXT" xml:space="preserve">
+<value>Done</value>
+</data>
+<data name="AE_TAB_ACTION" xml:space="preserve">
+<value>Action</value>
+</data>
+<data name="AE_SELL_TEXT" xml:space="preserve">
+<value>SELL</value>
+</data>
+
+<data name="AE_QTY_TEXT" xml:space="preserve">
+<value>Qty</value>
+</data>
+<data name="AE_NO_DATA" xml:space="preserve">
+<value>No data available</value>
+</data>
+<data name="AE_LIMITS" xml:space="preserve">
+<value>Limits</value>
+</data>
+<data name="AE_CONVERSION_DIALOG_CONVERT_FROM" xml:space="preserve">
+<value>Convert From</value>
+</data>
+<data name="AE_INTRADAY" xml:space="preserve">
+<value>(INTRADAY)</value>
+</data>
+
+<data name="AE_ORDER_TYPE" xml:space="preserve">
+<value>Order Type</value>
+</data>
+<data name="AE_SUBMIT" xml:space="preserve">
+<value>SUBMIT</value>
+</data>
+<data name="AE_CONVERSION_DIALOG_CONVERT_TO" xml:space="preserve">
+<value>Convert To</value>
+</data>
+<data name="AE_PRODUCT_TYPE" xml:space="preserve">
+<value>Product Type</value>
+</data>
+<data name="AE_LOGOUT" xml:space="preserve">
+<value>Logout</value>
+</data>
+
+<data name="AE_ALPHANUMERICVALIDATION" xml:space="preserve">
+<value>New Password should be alphanumeric</value>
+</data>
+
+<data name="LOGIN_USERNAME" xml:space="preserve">
+<value>USER ID</value>
+</data>
+<data name="LOGIN_PASSWORD" xml:space="preserve">
+<value>PASSWORD</value>
+</data>
+<data name="LOGIN_PANMOBILE" xml:space="preserve">
+<value>Pancard or Mobile Number</value>
+</data>
+<data name="LOGIN" xml:space="preserve">
+<value>LOGIN</value>
+</data>
+<data name="LOGIN_HELP" xml:space="preserve">
+<value>Help</value>
+</data>
+<data name="LOGIN_OPEN_ACT" xml:space="preserve">
+<value>OPEN AN ACCOUNT</value>
+</data>
+<data name="LOGIN_MARKETS" xml:space="preserve">
+<value>MARKETS</value>
+</data>
+<data name="LOGIN_MEMBERS_DETAILS" xml:space="preserve">
+<value>Membership Details</value>
+</data>
+<data name="LOGIN_INVALIDUSERNAME" xml:space="preserve">
+<value>User ID is Incorrect</value>
+</data>
+
+<data name="LOGIN_ENTERPANCARDLENGTH" xml:space="preserve">
+<value>Incorrect 2FA password.</value>
+</data>
+
+<data name="LOGIN_CHPWD_USERNAME_PASSWORD_SHOULDNOT_SAME" xml:space="preserve">
+<value>User ID and NewPassword should not be same</value>
+</data>
+<data name="LOGIN_CHANGE_PASSWORD_KEY" xml:space="preserve">
+<value>CHANGE_PASSWORD</value>
+</data>
+<data name="LOGIN_NE_REGISTRATION_KEY" xml:space="preserve">
+<value>NE_REGISTRATION</value>
+</data>
+
+<data name="WATCHLIST_EXPAND_BID_TXT" xml:space="preserve">
+<value>Bid (Size)</value>
+</data>
+<data name="WATCHLIST_EXPAND_ASK" xml:space="preserve">
+<value>Ask (Size)</value>
+</data>
+
+<data name="WATCHLIST_SYMBOL_ALREADY_EXIST" xml:space="preserve">
+<value>Symbol already added in this Watchlist</value>
+</data>
+<data name="WATCHLIST_SYMBOL_MAX_LIMIT" xml:space="preserve">
+<value>Symbols already reach the maximum count</value>
+</data>
+<data name="WATCHLIST_SET_DEFAULT_WATCHLIST_ALERT" xml:space="preserve">
+<value>Do you want to set this watchlist to default watchlist</value>
+</data>
+<data name="WATCHLIST_CHANGE" xml:space="preserve">
+<value>Change</value>
+</data>
+<data name="WATCHLIST_MAXIMUM" xml:space="preserve">
+<value>Already reach the maximum</value>
+</data>
+<data name="WATCHLIST_SENSEX" xml:space="preserve">
+<value>SENSEX</value>
+</data>
+<data name="WATCHLIST_SYMBOL_DELETED" xml:space="preserve">
+<value>Symbol deleted Successfully</value>
+</data>
+
+<data name="ADD_WATCHLIST_TITLETEXT" xml:space="preserve">
+<value>Watchlist</value>
+</data>
+<data name="ADD_WATCHLIST" xml:space="preserve">
+<value>Add WatchList</value>
+</data>
+
+<data name="FROM_CONFIG_ORDERBOOK" xml:space="preserve">
+<value>orderBook</value>
+</data>
+<data name="FROM_CONFIG_CONTACT_US_DETAILS" xml:space="preserve">
+<value>contactUs</value>
+</data>
+<data name="FROM_CONFIG_TRADE_LABEL" xml:space="preserve">
+<value>Trades</value>
+</data>
+<data name="FROM_CONFIG_LIMIT" xml:space="preserve">
+<value>limit</value>
+</data>
+<data name="FORGET_PASSWORD_NOTE" xml:space="preserve">
+<value>Note: Trading Password Reset will not work during Weekends and Trading Holodays</value>
+</data>
+<data name="FORGET_PASSWORD_CONTENT" xml:space="preserve">
+<value>Password would be sent to registered email adress and mobile phone immediately.</value>
+</data>
+
+<data name="FORGET_PASSWORD_INVALIDPANNUMBER" xml:space="preserve">
+<value>Pan No/Mobile No Field is Invalid</value>
+</data>
+
+<data name="POSITION_AVG_PRICE" xml:space="preserve">
+<value>Average Price</value>
+</data>
+<data name="POSITION_NET_QTY" xml:space="preserve">
+<value>Net Qty</value>
+</data>
+<data name="POSITION_NETGL" xml:space="preserve">
+<value>MTM G/L</value>
+</data>
+<data name="POSITION_PROF" xml:space="preserve">
+<value>PROFIT</value>
+</data>
+<data name="POSITION_LOSS" xml:space="preserve">
+<value>LOSS</value>
+</data>
+<data name="POSITION_CONFIG_BUY_QTY" xml:space="preserve">
+<value>buyQty</value>
+</data>
+<data name="POSITION_CONFIG_SELL_QTY" xml:space="preserve">
+<value>sellQty</value>
+</data>
+<data name="POSITION_CONFIG_AVG_BUY" xml:space="preserve">
+<value>avgByPrice</value>
+</data>
+<data name="POSITION_CONFIG_AVG_SELL" xml:space="preserve">
+<value>avgSlPrice</value>
+</data>
+<data name="POSITION_CONFIG_RAL_GAIN" xml:space="preserve">
+<value>rlizdGain</value>
+</data>
+<data name="POSITION_CONFIG_UNREL_GAIN" xml:space="preserve">
+<value>unRlizdGain</value>
+</data>
+<data name="POSITION_CONFIG_PROD_TYPE" xml:space="preserve">
+<value>prodType</value>
+</data>
+<data name="POSITION_SQUAREOFFTITLE" xml:space="preserve">
+<value>SQUARE OFF</value>
+</data>
+<data name="POSITION_CONVERSION" xml:space="preserve">
+<value>CONVERSION</value>
+</data>
+<data name="POSITION_CONVERT" xml:space="preserve">
+<value>CONVERT</value>
+</data>
+<data name="POSITION_LOTS" xml:space="preserve">
+<value>Lots</value>
+</data>
+<data name="POSITION_SELL_POSITION" xml:space="preserve">
+<value>SELL POSITIONS</value>
+</data>
+<data name="POSITION_BUY_POSITION" xml:space="preserve">
+<value>BUY POSITIONS</value>
+</data>
+<data name="POSITION_SELL_QTY" xml:space="preserve">
+<value>Sell Quantity</value>
+</data>
+<data name="CHANGE_PASSWORD_ALERT" xml:space="preserve">
+<value>Do you really want to change the Password</value>
+</data>
+<data name="CHANGE_PASSWORD_OLDPWD_NEWPWD_SHOULDNOT_SAME" xml:space="preserve">
+<value>New Password cannot be same as old password.</value>
+</data>
+
+<data name="CHANGE_PASSWORD_PWD_MIN6_MAX12_WEBVALIDATION" xml:space="preserve">
+<value>New Password cannot be less than 6 characters.</value>
+</data>
+<data name="CHANGE_PASSWORD_CURRENTPWD_CANNOT_EMPTY" xml:space="preserve">
+<value>Current Password cannot be Empty.</value>
+</data>
+<data name="CHANGE_PASSWORD_NEWPWD_CANNOT_EMPTY" xml:space="preserve">
+<value>New Password cannot be Empty.</value>
+</data>
+<data name="CHANGE_PASSWORD_CONFIRMPWD_CANNOT_EMPTY" xml:space="preserve">
+<value>Confirm Password cannot be Empty.</value>
+</data>
+<data name="TRADE_ORDERBOOK_EXPAND_EXCHANGE_ORDRNO" xml:space="preserve">
+<value>Exchange Order No</value>
+</data>
+<data name="TRADE_QUANTITY" xml:space="preserve">
+<value>Quantity</value>
+</data>
+<data name="TRADE_TIME" xml:space="preserve">
+<value>Time</value>
+</data>
+<data name="TRADE_PRICE" xml:space="preserve">
+<value>Price</value>
+</data>
+<data name="TRADE_NO" xml:space="preserve">
+<value>Trade No</value>
+</data>
+<data name="ORDERBOOK_DATETIME" xml:space="preserve">
+<value>Date & Time</value>
+</data>
+<data name="ORDERBOOK_TRIGPRICE" xml:space="preserve">
+<value>Trigger Price</value>
+</data>
+<data name="ORDERBOOK_FILTER_BY_TEXT" xml:space="preserve">
+<value>Filter By</value>
+</data>
+<data name="ORDERBOOK_AMO_ORDER_NO" xml:space="preserve">
+<value>AMO Order No</value>
+</data>
+<data name="ORDERBOOK_BROKER_ORDER_NO" xml:space="preserve">
+<value>Broker Order No</value>
+</data>
+<data name="ORDERBOOK_STATUS" xml:space="preserve">
+<value>Status</value>
+</data>
+<data name="ORDERBOOK_ORDER_CANCELLED" xml:space="preserve">
+<value>Order Cancelled Successfully</value>
+</data>
+<data name="ORDERBOOK_QTY_PENDING" xml:space="preserve">
+<value>Qty (Pend.Qty)</value>
+</data>
+<data name="ORDERBOOK_CHKMARGIN_EXPOSURE_MARGIN" xml:space="preserve">
+<value>Exposure Margin</value>
+</data>
+<data name="ORDERBOOK_ADMIN_REJECTED" xml:space="preserve">
+<value>Admin Rejected</value>
+</data>
+<data name="ORDERBOOK_DISCLOSED_QTY" xml:space="preserve">
+<value>Disclosed Qty</value>
+</data>
+<data name="ORDERBOOK_VALIDITY" xml:space="preserve">
+<value>Validity</value>
+</data>
+<data name="ORDERBOOK_REASON" xml:space="preserve">
+<value>Reason</value>
+</data>
+<data name="ORDERBOOK_API_STATUS" xml:space="preserve">
+<value>Api Status</value>
+</data>
+<data name="ORDERBOOK_REPLACE_ORDER" xml:space="preserve">
+<value>REPLACE ORDER</value>
+</data>
+<data name="ORDERBOOK_STOP_LOSS_ORDER" xml:space="preserve">
+<value>STOP LOSS ORDER</value>
+</data>
+<data name="ORDERBOOK_CANCEL_ORDER" xml:space="preserve">
+<value>CANCEL ORDER</value>
+</data>
+<data name="ORDERBOOK_MODIFY_ORDER" xml:space="preserve">
+<value>MODIFY ORDER</value>
+</data>
+<data name="ORDERREVIEW_QTYORLOTS" xml:space="preserve">
+<value>Quantity/Lots</value>
+</data>
+<data name="ORDERREVIEW_MARGIN" xml:space="preserve">
+<value>Margin</value>
+</data>
+<data name="ORDERREVIEW_DAY" xml:space="preserve">
+<value>Day</value>
+</data>
+<data name="ORDERREVIEW_CONFIRM" xml:space="preserve">
+<value>CONFIRM</value>
+</data>
+<data name="ORDEREVIEW_MODIFY" xml:space="preserve">
+<value>MODIFY</value>
+</data>
+<data name="ORDER_RESULT_TICK_TEXT" xml:space="preserve">
+<value>Tick</value>
+</data>
+<data name="ORDERRESULT_ORDER_SUCCESS" xml:space="preserve">
+<value>ORDER SUBMITTED SUCCESSFULLY</value>
+</data>
+<data name="ORDER_STATUS" xml:space="preserve">
+<value>ORDER STATUS</value>
+</data>
+<data name="MYHOLDINGS_ALERT_TITLE" xml:space="preserve">
+<value>MY HOLDINGS DETAILS</value>
+</data>
+<data name="MYHOLDINGS_ALERT_HOLDING_VALUE" xml:space="preserve">
+<value>Holding Value</value>
+</data>
+<data name="MYHOLDINGS_ALERT_TOTAL_QTY" xml:space="preserve">
+<value>Total Qty</value>
+</data>
+<data name="FUNDTRANSFER_REFERENCE_NO" xml:space="preserve">
+<value>Reference No</value>
+</data>
+<data name="FUNDTRANSFER_AMOUNT_APPROVED" xml:space="preserve">
+<value>Aproved Amount</value>
+</data>
+<data name="FUNDTRANSFER_AMOUNT_TEXT" xml:space="preserve">
+<value>Amount</value>
+</data>
+<data name="FUNDTRANSFER_HEADING_TEXT" xml:space="preserve">
+<value>Transfer Fund - To Broker Account</value>
+</data>
+<data name="FUNDTRANSFER_SEGMENT_TEXT" xml:space="preserve">
+<value>Segment</value>
+</data>
+<data name="FUNDTRANSFER_BANK_NAME" xml:space="preserve">
+<value>Bank Name</value>
+</data>
+<data name="FUNDTRANSFER_ACCOUNT_NUMBER" xml:space="preserve">
+<value>Account Number</value>
+</data>
+<data name="FUNDTRANSFER_DATE_TIME_STAMP" xml:space="preserve">
+<value><![CDATA[Date & Time]]></value>
+</data>
+<data name="LIMIT_DESCRIPTION_TEXT" xml:space="preserve">
+<value>Description</value>
+</data>
+<data name="LIMIT_MF_TEXT" xml:space="preserve">
+<value>MF</value>
+</data>
+<data name="LIMIT_TRADING_TEXT" xml:space="preserve">
+<value>Trading</value>
+</data>
+<data name="PLACEORDER_CHECKMARGIN_TITLE" xml:space="preserve">
+<value>MARGIN DETAILS</value>
+</data>
+<data name="PLACEORDER_CHECKMARGIN_SPAN_MARGIN" xml:space="preserve">
+<value>Span Margin</value>
+</data>
+<data name="PLACEORDER_CHECKMARGIN_TOTAL" xml:space="preserve">
+<value>Total</value>
+</data>
+<data name="PLACEORDER_NORMAL_ORDER" xml:space="preserve">
+<value>Normal Order</value>
+</data>
+<data name="PLACEORDER_MY_HOLDINGS" xml:space="preserve">
+<value>My Holdings</value>
+</data>
+<data name="PLACEORDER_LOST_SIZE" xml:space="preserve">
+<value>Lots (Lot Size = -)</value>
+</data>
+<data name="PLACEORDER_STOP_LOSS" xml:space="preserve">
+<value>Stop Loss</value>
+</data>
+<data name="SECURITY_INFO_SERIES" xml:space="preserve">
+<value>Series</value>
+</data>
+<data name="SECURITY_LOT_SIZE" xml:space="preserve">
+<value>Lot Size</value>
+</data>
+<data name="SECURITY_TICK_SIZE_PAISE" xml:space="preserve">
+<value>Tick Size (Paise)</value>
+</data>
+<data name="SECURITY_EXCHANGE" xml:space="preserve">
+<value>Exchange</value>
+</data>
+<data name="SECURITY_FACE_VALUE" xml:space="preserve">
+<value>Face value</value>
+</data>
+<data name="SECURITY_PRICE_NUMERATOR" xml:space="preserve">
+<value>Price Numerator</value>
+</data>
+<data name="SECURITY_PRICE_DENOMINATOR" xml:space="preserve">
+<value>Price Denominator</value>
+</data>
+<data name="SECURITY_LABEL" xml:space="preserve">
+<value>Security Info</value>
+</data>
+<data name="SECURITY_INSTRUMENT_TYPE" xml:space="preserve">
+<value>Instrument Type</value>
+</data>
+<data name="SECURITY_MAX_ORDER_PRICE" xml:space="preserve">
+<value>Max Order Size</value>
+</data>
+<data name="SECURITY_MATURITY_DATE" xml:space="preserve">
+<value>Maturity Date</value>
+</data>
+<data name="SECURITY_OI_PER" xml:space="preserve">
+<value>OI%</value>
+</data>
+<data name="SECURITY_DELIVERY_TXT" xml:space="preserve">
+<value>Delivery Unit</value>
+</data>
+<data name="SECURITY_PRICE_UNITS" xml:space="preserve">
+<value>Price Units</value>
+</data>
+<data name="SECURITY_QTY_UNITS" xml:space="preserve">
+<value>Qty Units</value>
+</data>
+<data name="SECURITY_FREEZ_PER" xml:space="preserve">
+<value>Freeze %</value>
+</data>
+<data name="SECURITY_PRICE_QUOTATION" xml:space="preserve">
+<value>Price Quotation</value>
+</data>
+<data name="HOLDINGS_TOTAL_HOLDING_VALUES" xml:space="preserve">
+<value>Total Holdings Value</value>
+</data>
+<data name="HOLDING_DAY_GL" xml:space="preserve">
+<value>Day G/L</value>
+</data>
+<data name="SEARCH_STRING" xml:space="preserve">
+<value>Search string must be atleast 2 characters</value>
+</data>
+<data name="SEARCH_RECENT_SEARCH" xml:space="preserve">
+<value>Recent Searches</value>
+</data>
+<data name="VERSIONUPDATE_NEW_VERSION" xml:space="preserve">
+<value>New Version</value>
+</data>
+<data name="VERSIONUPDATE_CURRENT_VERSION" xml:space="preserve">
+<value>Current Version</value>
+</data>
+<data name="VERSIONUPDATE_SKIP" xml:space="preserve">
+<value>SKIP</value>
+</data>
+<data name="VERSIONUPDATE_UPDATE" xml:space="preserve">
+<value>UPDATE</value>
+</data>
+<data name="QUOTE_TILT_TO_LANDSCAP_TEXT" xml:space="preserve">
+<value>Tilt to Landscape</value>
+</data>
+<data name="QUOTE_TILT_TO_PORTRAIT_TEXT" xml:space="preserve">
+<value>Tilt to Portrait</value>
+</data>
+<data name="QUOTE_UCL" xml:space="preserve">
+<value>UCL</value>
+</data>
+<data name="QUOTE_TTQ" xml:space="preserve">
+<value>TTQ</value>
+</data>
+<data name="QUOTE_ATP" xml:space="preserve">
+<value>ATP</value>
+</data>
+<data name="QUOTE_LCL" xml:space="preserve">
+<value>LCL</value>
+</data>
+<data name="QUOTE_VOLUME" xml:space="preserve">
+<value>Volume</value>
+</data>
+<data name="QUOTE_WEEK_TIME" xml:space="preserve">
+<value>52 Week Low/High</value>
+</data>
+<data name="QUOTE_ASK_TEXT" xml:space="preserve">
+<value>ASK</value>
+</data>
+<data name="QUOTE_LABEL" xml:space="preserve">
+<value>Quote</value>
+</data>
+<data name="QUOTE_TOTAL_BUY_QTY" xml:space="preserve">
+<value>Total Buy Qty</value>
+</data>
+<data name="QUOTE_LTQ" xml:space="preserve">
+<value>LTQ</value>
+</data>
+<data name="QUOTE_TOTAL_SELL_QTY" xml:space="preserve">
+<value>Total Sell Qty</value>
+</data>
+<data name="QUOTE_LOW" xml:space="preserve">
+<value>Low</value>
+</data>
+<data name="QUOTE_BESTFIVE_ORDER_HASH" xml:space="preserve">
+<value>Order #</value>
+</data>
+<data name="QUOTE_CLOSE" xml:space="preserve">
+<value>Close</value>
+</data>
+<data name="QUOTE_OPEN" xml:space="preserve">
+<value>Open</value>
+</data>
+<data name="QUOTE_BESTFIVE_BID" xml:space="preserve">
+<value>BID</value>
+</data>
+<data name="MARKETS_NIFTY_TEXT" xml:space="preserve">
+<value>Nifty</value>
+</data>
+<data name="MARKETS_PREVIOUS_CLOSE" xml:space="preserve">
+<value>Previous Close</value>
+</data>
+<data name="SORTING_INSTRUMENT_LABEL" xml:space="preserve">
+<value>Instrument</value>
+</data>
+<data name="SORTING_ACTION_LABEL" xml:space="preserve">
+<value>Action</value>
+</data>
+<data name="SORTING_SORT_BY" xml:space="preserve">
+<value>Sort By</value>
+</data>
+<data name="WITHDRAWAL_VIEW_TRANSACTION" xml:space="preserve">
+<value>VIEW TRANSACTIONS</value>
+</data>
+<data name="WITHDRAWAL_BANK_ACCOUNT" xml:space="preserve">
+<value>Bank Account</value>
+</data>
+<data name="WITHDRAWAL_AVAILABLE_BALANCE" xml:space="preserve">
+<value>Available Balance</value>
+</data>
+<data name="CHART_INDICATOR_FIELD_EMPTY" xml:space="preserve">
+<value>Chart Indicator Value is empty</value>
+</data>
+<data name="CHART_INDICATOR_EXISTS" xml:space="preserve">
+<value>Chart indicator Already Exist</value>
+</data>
+<data name="CHART_INDICATORS" xml:space="preserve">
+<value>Chart Indicator</value>
+</data>
+<data name="CHART_MAXIMUN_IDICATORS_LABEL" xml:space="preserve">
+<value>CHART_MAXIMUN_IDICATORS_LABEL</value>
+</data>
+<data name="NEWS_HEADING_TEXT" xml:space="preserve">
+<value>UBS, Goldman, JPM may drop discretionary IT spend in 2015</value>
+</data>
+<data name="NEWS_CONTENT" xml:space="preserve">
+<value>Three major global investment banks are likely to remove discretionary IT...</value>
+</data>
+<data name="BEST_FIVE_LABEL" xml:space="preserve">
+<value>Best Five</value>
+</data>
+<data name="CHART_LABEL" xml:space="preserve">
+<value>Charts</value>
+</data>
+<data name="NEWS_LABEL" xml:space="preserve">
+<value>News</value>
+</data>
+<data name="DELETE_SCRIP" xml:space="preserve">
+<value>Delete</value>
+</data>
+<data name="MENU_GUEST" xml:space="preserve">
+<value>Guest</value>
+</data>
+<data name="ALERTDIALOG_TITLE" xml:space="preserve">
+<value>Angel Eye</value>
+</data>
+<data name="PROGRESS_LOADING_TEXT" xml:space="preserve">
+<value>Loading...</value>
+</data>
+<data name="MARKET_WATCH_TITLE" xml:space="preserve">
+<value>MARKET WATCH</value>
+</data>
+<data name="IDLE_TIME_OUT_MESSAGE" xml:space="preserve">
+<value>You have been logged out as there was no activity since sometime</value>
+</data>
+<data name="INDICATOR_ADD" xml:space="preserve">
+<value>INDICATOR_ADD</value>
+</data>
+<data name="WATCHLIST_NO_SYMBOL_ALERT" xml:space="preserve">
+<value>Please add some scrip to this watchlist using the (Icon) icon below or + to add scrips.Note: Can you please make the icon with Blue color which is used for search. Also the + in the message should be bigger in size and blue color displayed like a hyperlink.</value>
+</data>
+<data name="WATCHLIST_ALREADY_SET_TO_DEFAULT" xml:space="preserve">
+<value>Selected watchlist is already default.</value>
+</data>
+<data name="SQU_OFF_EMPTY_QTY" xml:space="preserve">
+<value>Seems like you have left the Quantity field empty</value>
+</data>
+<data name="SQU_OFF_INCORRECT_QTY" xml:space="preserve">
+<value>The Quantity that you have entered looks incorrect</value>
+</data>
+<data name="SQU_OFF_INCORRECT_PRICE" xml:space="preserve">
+<value>The Price that you have entered looks incorrect</value>
+</data>
+<data name="SQU_OFF_TICK_SIZE" xml:space="preserve">
+<value>Value is not a multiple of tick size</value>
+</data>
+<data name="CONV_TYPE_CHANGE" xml:space="preserve">
+<value>Please change the conversion type</value>
+</data>
+
+<data name="EDIT_WL_DEFAULT" xml:space="preserve">
+<value>This watchlist cannot be renamed.</value>
+</data>
+<data name="POS_TITLE" xml:space="preserve">
+<value>POSITIONS</value>
+</data>
+<data name="POS_DETAILS_TITLE" xml:space="preserve">
+<value>POSITIONS DETAILS</value>
+</data>
+<data name="AVG_BUY_PRICE" xml:space="preserve">
+<value>Avg Buy Price</value>
+</data>
+<data name="AVG_SELL_PRICE" xml:space="preserve">
+<value>Avg Sell Price</value>
+</data>
+<data name="ORD_BUY_QTY" xml:space="preserve">
+<value>Buy Quantity</value>
+</data>
+<data name="RELALIZED_GAIN" xml:space="preserve">
+<value>Realized Gain</value>
+</data>
+<data name="UN_RELALIZED_GAIN" xml:space="preserve">
+<value>Unrealized Gain</value>
+</data>
+<data name="TRADE_DETAILS" xml:space="preserve">
+<value>TRADE DETAILS</value>
+</data>
+
+<data name="ORDER_BOOK_DATE_TIME" xml:space="preserve">
+<value>Date & Time</value>
+</data>
+<data name="VIEW_CHARTS" xml:space="preserve">
+<value>VIEW CHARTS</value>
+</data>
+<data name="ADD_CHARTS" xml:space="preserve">
+<value>ADD</value>
+</data>
+<data name="TECHNICAL_INDICATORS" xml:space="preserve">
+<value>TECHNICAL INDICATORS</value>
+</data>
+<data name="QUOTE_TRADE_SEGMENT" xml:space="preserve">
+<value>You are not allowed to place a Trade for this segment</value>
+</data>
+<data name="NEWS_POWERED_MARKETS" xml:space="preserve">
+<value>Powered by Capital Market - Live News</value>
+</data>
+<data name="GET_QUOTE_TITLE" xml:space="preserve">
+<value>GET  QUOTE</value>
+</data>
+<data name="NEWS_DETAILS_TITLE" xml:space="preserve">
+<value>NEWS DETAILS</value>
+</data>
+<data name="NET_FUND_AVAIL" xml:space="preserve">
+<value>Net Available Funds</value>
+</data>
+<data name="DETAILS_TITLE" xml:space="preserve">
+<value>DETAILS</value>
+</data>
+<data name="HOLDING_TITLE" xml:space="preserve">
+<value>HOLDINGS</value>
+</data>
+<data name="TTL_HOLDINGS_VAL" xml:space="preserve">
+<value>Total Holdings Value</value>
+</data>
+<data name="SEARCH_TEXT_PLACEHOLDER" xml:space="preserve">
+<value>Search for Symbol e.g.(REL)</value>
+</data>
+<data name="SEARCH_TITLE" xml:space="preserve">
+<value>SEARCH</value>
+</data>
+<data name="FUND_TRANFER_ACC" xml:space="preserve">
+<value>Tranfer Fund - To Broker Account</value>
+</data>
+
+<data name="AE_CANCEL_CAPS" xml:space="preserve">
+<value>CANCEL</value>
+</data>
+<data name="QUOTE_TRADEALLOWED" xml:space="preserve">
+<value>Your account is not enabled for Trading in this segment</value>
+</data>
+<data name="MY_WATCHLIST_NO_SYMBOL_ALERT" xml:space="preserve">
+<value>Please add some scrip to this watchlist using the o icon below</value>
+</data>
+<data name="AE_CHECK_NETWORK" xml:space="preserve">
+<value>Please check your internet connect &amp; Try again</value>
+</data>
+<data name="AE_VERSION_UPDATE" xml:space="preserve">
+<value>Version Update</value>
+</data>
+<data name="FROM_CONFIG_MEMBERSHIPDETAIL" xml:space="preserve">
+<value>membershipDetail</value>
+</data>
+<data name="AE_ALERT_REGISTERNOW" xml:space="preserve">
+<value>Register Now</value>
+</data>
+<data name="VERSIONUPDATE_TEXT" xml:space="preserve">
+<value>Version Update</value>
+</data>
+<data name="VERSIONUPDATE_MANDATORY" xml:space="preserve">
+<value>Mandatory Update Available!</value>
+</data>
+<data name="VERSIONUPDATE_VERSION" xml:space="preserve">
+<value>Version Update Available!</value>
+</data>
+<data name="VERSIONUPDATE_EXIT" xml:space="preserve">
+<value>EXIT</value>
+</data>
+<data name="EDIT_WATCHLIST_TEXT" xml:space="preserve">
+<value>EDIT WATCHLIST</value>
+</data>
+<data name="EDIT_WATCHLIST_DELETE" xml:space="preserve">
+<value>WatchList Deleted successfully.</value>
+</data>
+<data name="EDIT_WATCHLIST_CREATE_FAILED" xml:space="preserve">
+<value>Create WatchList failed.</value>
+</data>
+<data name="PLACE_ORDER_TITLE" xml:space="preserve">
+<value>PLACE ORDER</value>
+</data>
+<data name="DISCLOSED_QTY" xml:space="preserve">
+<value>Disclosed Quantity</value>
+</data>
+<data name="TRIGGER_PRICE" xml:space="preserve">
+<value>Trigger Price</value>
+</data>
+<data name="PLACE_ORDER_DISCLOSED_QTY" xml:space="preserve">
+<value>Disclosed qty should be less than Quantity</value>
+</data>
+<data name="ORDER_PRICE_PAR_CONTRACT" xml:space="preserve">
+<value>Order price should be in multiples of tick size(Rs. %@) for that particular contract.</value>
+</data>
+<data name="PLACE_ORDER_TRIGGER_PRICE" xml:space="preserve">
+<value>Trigger price should be in multiples of tick size(%@ paise) for that particular contract.</value>
+</data>
+<data name="MY_HOLDINGS_DETAILS_TITLE" xml:space="preserve">
+<value>MY HOLDING DETAILS</value>
+</data>
+<data name="CHECK_MARGIN" xml:space="preserve">
+<value>Check Margin</value>
+</data>
+<data name="ORDER_PRICE_TITLE" xml:space="preserve">
+<value>ORDER PREVIEW</value>
+</data>
+<data name="ORDER_RESULT_TITLE" xml:space="preserve">
+<value>ORDER RESULT</value>
+</data>
+<data name="SYMBOL_ALREADY_EXIST" xml:space="preserve">
+<value>Symbol exists already</value>
+</data>
+<data name="PSWD_SAME_USERNAME" xml:space="preserve">
+<value>Password should not be the same as Username</value>
+</data>
+<data name="NEW_UPDATE_AVAIL" xml:space="preserve">
+<value>New Update Available!</value>
+</data>
+<data name="TERMS_AND_CONDITIONS" xml:space="preserve">
+<value>TERMS AND CONDITIONS</value>
+</data>
+<data name="WEB_LINK" xml:space="preserve">
+<value>WEB LINK</value>
+</data>
+<data name="CONTACT_US" xml:space="preserve">
+<value>CONTACT US</value>
+</data>
+<data name="RM_DETAILS" xml:space="preserve">
+<value>RM Details</value>
+</data>
+<data name="HELP_DESK" xml:space="preserve">
+<value>Helpdesk</value>
+</data>
+<data name="ABOUT_US" xml:space="preserve">
+<value>ABOUT US</value>
+</data>
+<data name="FAQ_TITLE" xml:space="preserve">
+<value>FAQ</value>
+</data>
+<data name="FUND_TRANFER_TITLE_CAPS" xml:space="preserve">
+<value>FUND TRANSFER</value>
+</data>
+<data name="LOGIN_HELP_TITLE" xml:space="preserve">
+<value>LOGIN HELP</value>
+</data>
+<data name="LOGIN_HELP_USERID_TEXT" xml:space="preserve">
+<value>Enter User ID</value>
+</data>
+<data name="LOGIN_HELP_PAN_MOBILE" xml:space="preserve">
+<value>PAN/Mobile No</value>
+</data>
+<data name="SETTING_TITLE" xml:space="preserve">
+<value>SETTINGS</value>
+</data>
+<data name="VERSION_UPDATE_TITLE" xml:space="preserve">
+<value>VERSION UPDATE</value>
+</data>
+<data name="MENU_LAST_LOGIN" xml:space="preserve">
+<value>Last login</value>
+</data>
+<data name="REG_REGISTRATION_TITLE" xml:space="preserve">
+<value>REGISTRATION</value>
+</data>
+<data name="CHANGE_PAASWORD_TITLE" xml:space="preserve">
+<value>CHANGE PASSWORD</value>
+</data>
+<data name="MY_PROFILE_TITLE" xml:space="preserve">
+<value>MY PROFILE</value>
+</data>
+<data name="DEFAULT_WATCHLIST_TITLE" xml:space="preserve">
+<value>DEFAULT WATCHLIST</value>
+</data>
+<data name="TECHNICAL_INDICATOR_MAX" xml:space="preserve">
+<value>Maximum of Six Indicators can be Added</value>
+</data>
+<data name="CHART_TIME_PERIOD" xml:space="preserve">
+<value>Time period</value>
+</data>
+<data name="LIMITS_TITLE" xml:space="preserve">
+<value>LIMITS</value>
+</data>
+<data name="SORT_QUANTITY" xml:space="preserve">
+<value>Quantity</value>
+</data>
+<data name="SESSION_TIMEOUT_ALERT" xml:space="preserve">
+<value>Session Timeout</value>
+</data>
+<data name="ADD_WL_ALPHANUMERIC_ALERT" xml:space="preserve">
+<value>WatchList name should be alphanumeric</value>
+</data>
+<data name="QUOTE_BESTFIVE_PRICE" xml:space="preserve">
+<value>Price</value>
+</data>
+<data name="CHANGE_PASSWORD_CURRENTPWD_INCORRECT" xml:space="preserve">
+<value>Current Password is Incorrect.</value>
+</data>
+<data name="FUND_TRANFERRED_SUCCESS" xml:space="preserve">
+<value>Fund Transferred successfully</value>
+</data>
+<data name="FUND_TRANSFER_SELECT_SEGMENT" xml:space="preserve">
+<value>Please select the segment</value>
+</data>
+<data name="FUND_TRANSFER_SELECT_BANK_ACCOUNT" xml:space="preserve">
+<value>Please select the Bank Account</value>
+</data>
+<data name="FUND_TRANSFER_AMOUNT_VALIDATION" xml:space="preserve">
+<value>Please enter an amount greater than 0</value>
+</data>
+<data name="FUND_TRANSFER_AMOUNT_EQUAL_AVAILABLE_BALANCE_VALIDATION" xml:space="preserve">
+<value>Amount should be less than or equal to available balance</value>
+</data>
+<data name="MARKETS_TITLE" xml:space="preserve">
+<value>MARKETS</value>
+</data>
+<data name="MENU_ADD_PHOTO" xml:space="preserve">
+<value>Add Photo</value>
+</data>
+<data name="MENU_TAKE_PHOTO" xml:space="preserve">
+<value>Take Photo</value>
+</data>
+<data name="MENU_CHOOSE_EXISTING_PHOTO" xml:space="preserve">
+<value>Choose Existing</value>
+</data>
+<data name="MENU_DELETE_PHOTO" xml:space="preserve">
+<value>Delete Photo</value>
+</data>
+<data name="AE_SAVE" xml:space="preserve">
+<value>Save</value>
+</data>
+<data name="RENAME_WATCHLIST" xml:space="preserve">
+<value>Rename WatchList</value>
+</data>
+<data name="DEFAULT_WATCHLIST_CANNOT_EDIT" xml:space="preserve">
+<value>Default watchlist cannot be edited. Please select another watchlist or create a new one</value>
+</data>
+
+<data name="EDIT_WATCHLIST_NAME" xml:space="preserve">
+<value>Please edit watchlist name</value>
+</data>
+<data name="EDIT_WATCHLIST_NAME_TITLE" xml:space="preserve">
+<value>Edit watchlist name</value>
+</data>
+<data name="SQU_OFF_DIALOG_QUANTY_VALUES" xml:space="preserve">
+<value>Please enter the Quantity value</value>
+</data>
+<data name="SQU_OFF_DIALOG_PRICE_VALUE" xml:space="preserve">
+<value>Please enter the price value</value>
+</data>
+<data name="SQU_OFF_DIALOG_CORRECT_QUANTITY" xml:space="preserve">
+<value>Please enter the correct quantity</value>
+</data>
+<data name="CONVERSION_DIALOG_LOTS_VALUE" xml:space="preserve">
+<value>Please change the value for Lots</value>
+</data>
+<data name="CONVERSION_DIALOG_CHANGE_VALUE" xml:space="preserve">
+<value>Please change the conversion type</value>
+</data>
+<data name="FROM_CONFIG_TERMSCONDITION" xml:space="preserve">
+<value>termsCondition</value>
+</data>
+<data name="FROM_CONFIG_WEBLINK" xml:space="preserve">
+<value>webLink</value>
+</data>
+<data name="FROM_CONFIG_ABOUTUS" xml:space="preserve">
+<value>aboutUs</value>
+</data>
+<data name="MYWATCHLIST_SYMB_CANT_ADD_MORETHAN20" xml:space="preserve">
+<value>Cannot add Symbols more than 20</value>
+</data>
+
+<data name="SQU_OFF_DIALOG_TICK_START" xml:space="preserve">
+<value>Price should be multiples of tick size (Rs.</value>
+</data>
+<data name="SQU_OFF_DIALOG_TICK_END" xml:space="preserve">
+<value>) for that particular contract.</value>
+</data>
+<data name="SERACH_OPTION_PE" xml:space="preserve">
+<value>PE</value>
+</data>
+<data name="SERACH_OPTION_CE" xml:space="preserve">
+<value>CE</value>
+</data>
+<data name="FILTER_ORDER_ALL" xml:space="preserve">
+<value>ALL</value>
+</data>
+<data name="FORGET_USERID_MOBILENO" xml:space="preserve">
+<value>Mobile No</value>
+</data>
+<data name="FORGET_USERID_EMAILID" xml:space="preserve">
+<value>Email Id</value>
+</data>
+<data name="FRAG_INDI_FAST_PERIOD" xml:space="preserve">
+<value>Fast Time Period</value>
+</data>
+<data name="FRAG_INDI_SLOW_PERIOD" xml:space="preserve">
+<value>Slow Time Period</value>
+</data>
+<data name="FRAG_INDI_SIGNAL_PERIOD" xml:space="preserve">
+<value>Signal Time Period</value>
+</data>
+<data name="QUOTE_HIGH" xml:space="preserve">
+<value>High</value>
+</data>
+<data name="TERMS_AND_CONDITIONS_SMALL" xml:space="preserve">
+<value>Terms and Conditions</value>
+</data>
+<data name="WEB_LINK_SMALL" xml:space="preserve">
+<value>Web Link</value>
+</data>
+<data name="CONTACT_US_SMALL" xml:space="preserve">
+<value>Contact Us</value>
+</data>
+<data name="ABOUT_US_SMALL" xml:space="preserve">
+<value>About Us</value>
+</data>
+<data name="NETWORK_RETRY" xml:space="preserve">
+<value>RETRY</value>
+</data>
+<data name="CHECKNETWORK" xml:space="preserve">
+<value>Check your network \n and try again.</value>
+</data>
+<data name="MENU_GOOGLE_PROFILE" xml:space="preserve">
+<value>Google Profile</value>
+</data>
+<data name="PROFILE_PHONE" xml:space="preserve">
+<value>Phone</value>
+</data>
+<data name="PROFILE_MOBILE" xml:space="preserve">
+<value>Mobile</value>
+</data>
+<data name="PROFILE_PAN" xml:space="preserve">
+<value>Pan</value>
+</data>
+<data name="PROFILE_EMAILID" xml:space="preserve">
+<value>Email id</value>
+</data>
+<data name="PROFILE_GENDER" xml:space="preserve">
+<value>Gender</value>
+</data>
+<data name="PROFILE_DOB" xml:space="preserve">
+<value>DOB</value>
+</data>
+<data name="SECURITY_OI" xml:space="preserve">
+<value>OI</value>
+</data>
+<data name="SETTINGS_REMEMBERUID" xml:space="preserve">
+<value>Remember User ID</value>
+</data>
+<data name="SETTINGS_CHANGEPWD" xml:space="preserve">
+<value>Change Password</value>
+</data>
+<data name="SETTINGS_MYPROFILE" xml:space="preserve">
+<value>My Profile</value>
+</data>
+<data name="SETTINGS_SETDEFWATCHLIST" xml:space="preserve">
+<value>Set Default watchlist</value>
+</data>
+
+<data name="CHANGE_PASSWORD_CURRENT_PWD" xml:space="preserve">
+<value>Current Password</value>
+</data>
+<data name="CHANGE_PASSWORD_NEW_PWD" xml:space="preserve">
+<value>New Password</value>
+</data>
+<data name="CHANGE_PASSWORD_RETYPE_NEW_PWD" xml:space="preserve">
+<value>Retype New Password</value>
+</data>
+<data name="SETTINGS_APPVERSION" xml:space="preserve">
+<value>App Version</value>
+</data>
+<data name="WATCH_SYMBOL_ADDED" xml:space="preserve">
+<value>Symbol Added successfully.</value>
+</data>
+<data name="SEARCH_ENTER_SYMBOL" xml:space="preserve">
+<value>Please enter the symbol</value>
+</data>
+<data name="ORDERBOOK_ALERT_CANCEL_ORDER" xml:space="preserve">
+<value>Are you sure do you want cancel the order?</value>
+</data>
+<data name="FROM_CONFIG_FAQ_URL" xml:space="preserve">
+<value>faqURL</value>
+</data>
+<data name="LOGIN_ACCOUNT_LOCKED" xml:space="preserve">
+<value>ACCOUNT_BLOCKED</value>
+</data>
+<data name="PRELOGIN_SETTINGS" xml:space="preserve">
+<value>Settings are accessible only after login. Select proceed to login</value>
+</data>
+<data name="AE_PROCEED" xml:space="preserve">
+<value>Proceed</value>
+</data>
+
+<data name="MF_HOLDINGS_TITLE" xml:space="preserve">
+<value>MF HOLDINGS</value>
+</data>
+<data name="MF_HOLDINGS_SCHEMENAME" xml:space="preserve">
+<value>Scheme Name</value>
+</data>
+<data name="MF_HOLDINGS_NAV" xml:space="preserve">
+<value>NAV</value>
+</data>
+<data name="MF_HOLDINGS_NAV_DATE" xml:space="preserve">
+<value>Nav Date</value>
+</data>
+<data name="MF_HOLDINGS_HOLDUNITS" xml:space="preserve">
+<value>Holding Units</value>
+</data>
+<data name="MF_HOLDINGS_REDEEMABLEUNITS" xml:space="preserve">
+<value>Redeemable Units</value>
+</data>
+
+<data name="MF_ORDERBOOK_TITLE" xml:space="preserve">
+<value>MF ORDER BOOK</value>
+</data>
+<data name="MF_ORDERBOOK_SCHEMENAME" xml:space="preserve">
+<value>Scheme Name</value>
+</data>
+<data name="MF_ORDERBOOK_ACTION" xml:space="preserve">
+<value>Action</value>
+</data>
+<data name="MF_ORDERBOOK_STATUS" xml:space="preserve">
+<value>Status</value>
+</data>
+<data name="MF_ORDERBOOK_INVEST_UNITS" xml:space="preserve">
+<value>Investment/Units</value>
+</data>
+<data name="MF_CANCEL" xml:space="preserve">
+<value>CANCEL</value>
+</data>
+<data name="MF_MODIFY" xml:space="preserve">
+<value>MODIFY</value>
+</data>
+<data name="MF_FOLIO_BENEFICIARY" xml:space="preserve">
+<value>Folio/Beneficiary</value>
+</data>
+<data name="MF_ORDER_NO" xml:space="preserve">
+<value>Order No</value>
+</data>
+
+<data name="MFWATCHLIST_LBL" xml:space="preserve">
+<value>MF WATCHLIST</value>
+</data>
+<data name="MFWATCHLIST_SCHEMENAME" xml:space="preserve">
+<value>Scheme Name</value>
+</data>
+<data name="MFWATCHLIST_NAV_DATE" xml:space="preserve">
+<value>Nav Date</value>
+</data>
+<data name="MFWATCHLIST_NAV" xml:space="preserve">
+<value>Nav</value>
+</data>
+<data name="MFWATCHLIST_CHANGE" xml:space="preserve">
+<value>Chng (Chng %)</value>
+</data>
+
+<data name="MFQUOTE_RETURNS" xml:space="preserve">
+<value>Returns</value>
+</data>
+<data name="MFQUOTE_SCHEME_INFO" xml:space="preserve">
+<value>Scheme Info</value>
+</data>
+
+<data name="FUNDS_SUMMARY_TITLE" xml:space="preserve">
+<value>FUNDS SUMMARY</value>
+</data>
+<data name="FUNDS_SUMMARY_PAYNOW" xml:space="preserve">
+<value>PAY NOW</value>
+</data>
+<data name="FUNDS_SUMMARY_WITHDRAWAL" xml:space="preserve">
+<value>WITHDRAWAL</value>
+</data>
+<data name="FUNDS_SUMMARY_PAYNOW_LBL" xml:space="preserve">
+<value>Pay Now</value>
+</data>
+<data name="FUNDS_SUMMARY_WITHDRAWAL_LBL" xml:space="preserve">
+<value>Withdrawal</value>
+</data>
+
+<data name="SECURITY_HOLDINGS_TITLE" xml:space="preserve">
+<value>SECURITY HOLDINGS</value>
+</data>
+<data name="SECURITY_HOLDINGS_SYMBOL" xml:space="preserve">
+<value>Symbol</value>
+</data>
+<data name="SECURITY_HOLDINGS_COMP_NAME" xml:space="preserve">
+<value>Company Name</value>
+</data>
+<data name="SECURITY_HOLDINGS_TOTAL_QTY" xml:space="preserve">
+<value>Total Qty</value>
+</data>
+<data name="SECURITY_HOLDINGS_VALUATION" xml:space="preserve">
+<value>Valuation</value>
+</data>
+<data name="SECURITY_HOLDINGS_LTP" xml:space="preserve">
+<value>LTP</value>
+</data>
+<data name="BTN_SECURITIES_PAYOUT" xml:space="preserve">
+<value>SECURITIES PAYOUT</value>
+</data>
+<data name="SECURITY_HOLDING_SUMMARY_VIEW" xml:space="preserve">
+<value>SUMMARY VIEW</value>
+</data>
+<data name="SECURITY_HOLDINGS_LAST_UPDATE_TIME" xml:space="preserve">
+<value>Last updated time</value>
+</data>
+
+<data name="SECURITIES_PAYOUT_TITLE" xml:space="preserve">
+<value>SECURITIES PAYOUT</value>
+</data>
+<data name="SECURITIES_PAYOUT_TRANSFER_TO" xml:space="preserve">
+<value>Transfer to</value>
+</data>
+<data name="SECURITIES_PAYOUT_FROM_ACC" xml:space="preserve">
+<value>From Account</value>
+</data>
+<data name="SECURITIES_PAYOUT_DP_IP" xml:space="preserve">
+<value>DP ID</value>
+</data>
+<data name="SECURITIES_PAYOUT_ISIN_CODE" xml:space="preserve">
+<value>ISIN code</value>
+</data>
+<data name="SECURITIES_PAYOUT_AVAILABLE" xml:space="preserve">
+<value>Available</value>
+</data>
+<data name="SECURITIES_PAYOUT_TO_ACC" xml:space="preserve">
+<value>my A/c</value>
+</data>
+
+<data name="SECURITY_HOLD_NBFC_ACC" xml:space="preserve">
+<value>NBFC A/C</value>
+</data>
+<data name="SECURITY_HOLD_MY_ACC" xml:space="preserve">
+<value>My A/C</value>
+</data>
+<data name="SECURITY_HOLD_BROKER_ACC" xml:space="preserve">
+<value>Broker A/C</value>
+</data>
+<data name="SECURITY_HOLD_RECEIVABLE" xml:space="preserve">
+<value>Unsettled Receivable</value>
+</data>
+<data name="SECURITY_HOLD_PAYABLE" xml:space="preserve">
+<value>Unsettled Payable</value>
+</data>
+<data name="SECURITY_HOLD_DERIVATIVES" xml:space="preserve">
+<value>Derivatives</value>
+</data>
+<data name="SECURITY_HOLD_COMMODITY" xml:space="preserve">
+<value>Commodity</value>
+</data>
+<data name="SECURITY_HOLD_CURRENCY" xml:space="preserve">
+<value>Currency</value>
+</data>
+<data name="SECURITY_HOLD_BLOCKED" xml:space="preserve">
+<value>BLOCKED FOR MARGIN UNDER</value>
+</data>
+
+<data name="SECURITY_HOLD_HOLDINGS" xml:space="preserve">
+<value>HOLDINGS</value>
+</data>
+<data name="SECURITY_HOLD_DETAIL_VIEW" xml:space="preserve">
+<value>DETAILED VIEW</value>
+</data>
+
+<data name="BO_INVALID_PERIOD" xml:space="preserve">
+<value>From date cannot be greater than to date</value>
+</data>
+<data name="BO_SELECT_FROM_DATE" xml:space="preserve">
+<value>Select From Date</value>
+</data>
+<data name="BO_SELECT_TO_DATE" xml:space="preserve">
+<value>Select To Date</value>
+</data>
+<data name="BO_SELECT_DATE" xml:space="preserve">
+<value>Select Date</value>
+</data>
+<data name="BO_REPORT_TYPE" xml:space="preserve">
+<value>Report Type</value>
+</data>
+<data name="BO_TRANSACTION_TYPE" xml:space="preserve">
+<value>Select Transaction Type</value>
+</data>
+<data name="BO_SEGMENT_TYPE" xml:space="preserve">
+<value>Select Segment</value>
+</data>
+<data name="BO_SELECT_DPI" xml:space="preserve">
+<value>Select DP ID</value>
+</data>
+<data name="BO_FINANCILA_YEAR" xml:space="preserve">
+<value>Financial Year</value>
+</data>
+<data name="BO_SENDREPORT" xml:space="preserve">
+<value>SEND REPORT</value>
+</data>
+<data name="FUNDS_SUMMARY_LEDGER_AMOUNT" xml:space="preserve">
+<value>Ledger Amount (A)</value>
+</data>
+<data name="FUNDS_SUMMARY_COLLATERALS" xml:space="preserve">
+<value>Collaterals (B)</value>
+</data>
+<data name="FUNDS_SUMMARY_SUBTOTAL" xml:space="preserve">
+<value>Sub Total</value>
+</data>
+<data name="FUNDS_SUMMARY_MARGIN_REQUIRED" xml:space="preserve">
+<value>Margin Required (C)</value>
+</data>
+<data name="FUND_SUMMARY_MARGIN_SHORTFALL" xml:space="preserve">
+<value>Margin Shortfall</value>
+</data>
+<data name="FUNDS_SUMMARY_NETBALANCE" xml:space="preserve">
+<value>Net Balance (A+B-C)</value>
+</data>
+
+<data name="REPORTS_TITLE" xml:space="preserve">
+<value>REPORTS</value>
+</data>
+<data name="BO_TRANS_TYPE" xml:space="preserve">
+<value>Transaction Type</value>
+</data>
+<data name="BO_SELECT_EXCHANGE" xml:space="preserve">
+<value>Select Exchange</value>
+</data>
+<data name="BO_TYPE" xml:space="preserve">
+<value>Type</value>
+</data>
+<data name="BO_DP_ID" xml:space="preserve">
+<value>DP ID</value>
+</data>
+<data name="BO_REPORTS_SENDREQ_MSG" xml:space="preserve">
+<value>Reports will be send to your registered email id. You will also receive SMS with the report link for directly viewing the report.</value>
+</data>
+
+<data name="MYPROFILE_BANK_NAME" xml:space="preserve">
+<value>Bank Name</value>
+</data>
+<data name="MYPROFILE_BANK_ACCOUNT_NO" xml:space="preserve">
+<value>Bank Account No.</value>
+</data>
+<data name="MYPROFILE_MY_AMC_DUE" xml:space="preserve">
+<value>My AMC Due</value>
+</data>
+<data name="MYPROFILE_AMC_DUE" xml:space="preserve">
+<value>AMC Due</value>
+</data>
+<data name="MYPROFILE_AMC_DUE_DATE" xml:space="preserve">
+<value>AMC Due Date</value>
+</data>
+<data name="MYPROFILE_DP_LEDGER" xml:space="preserve">
+<value>DP Ledger</value>
+</data>
+<data name="MYPROFILE_ACCRUAL" xml:space="preserve">
+<value>Accruals</value>
+</data>
+<data name="MYPROFILE_ELECTRONIC_CONTRACT_NOTE" xml:space="preserve">
+<value>Electronic Contract Note</value>
+</data>
+<data name="MYPROFILE_MYBRANCH" xml:space="preserve">
+<value>My Branch</value>
+</data>
+<data name="MYPROFILE_SUB_BROKER" xml:space="preserve">
+<value>Sub Broker</value>
+</data>
+<data name="MYPROFILE_CLIENT_TYPE" xml:space="preserve">
+<value>Client Type</value>
+</data>
+<data name="MYPROFILE_ACTIVE_SEG" xml:space="preserve">
+<value>Active Segment</value>
+</data>
+<data name="MYPROFILE_EQ_ADVISOR" xml:space="preserve">
+<value>Equity Advisor</value>
+</data>
+<data name="MYPROFILE_COMMODITY_ADVISOR" xml:space="preserve">
+<value>Commodity Advisor</value>
+</data>
+<data name="MYPROFILE_ADDRESS" xml:space="preserve">
+<value>Address</value>
+</data>
+
+<data name="MF_PO_ANGEL_DP_HOLDINGS" xml:space="preserve">
+<value>Angel Dp Holdings</value>
+</data>
+<data name="MF_PO_AMOUNT_TO_INVEST" xml:space="preserve">
+<value>Amount to Invest</value>
+</data>
+<data name="MF_PO_I_ACCEPT_TC" xml:space="preserve">
+<value>I accept</value>
+</data>
+<data name="MF_PO_INVESTMENT_DETAILS" xml:space="preserve">
+<value>Investment Details</value>
+</data>
+<data name="MF_PO_IN_MULTIPLE_RS" xml:space="preserve">
+<value>In Multiple of (Rs.)</value>
+</data>
+<data name="MF_PO_MIN_INV_AMT_RS" xml:space="preserve">
+<value>Min Inv Amt (Rs.)</value>
+</data>
+<data name="MF_PO_INV_TYPE" xml:space="preserve">
+<value>Inv Type</value>
+</data>
+<data name="MF_PO_CUTOFF_TIME" xml:space="preserve">
+<value>Cut Off Time</value>
+</data>
+
+<data name="BO_VIEW_AS" xml:space="preserve">
+<value>View as</value>
+</data>
+<data name="AE_EXIT" xml:space="preserve">
+<value>Exit</value>
+</data>
+<data name="MF_ORDERBOOK_VALID_DATE_PERIOD" xml:space="preserve">
+<value>Please choose the valid date period</value>
+</data>
+
+<data name="MF_OREDER_INVEST" xml:space="preserve">
+<value>Investment</value>
+</data>
+<data name="MF_OREDER_UNITS" xml:space="preserve">
+<value>Units</value>
+</data>
+<data name="MF_RETURNS_RETURNS" xml:space="preserve">
+<value>Returns</value>
+</data>
+<data name="MF_RETURNS_PERCENTAGE" xml:space="preserve">
+<value>Percentage</value>
+</data>
+<data name="MF_RETURNS_BENCHMARK" xml:space="preserve">
+<value>Benchmark (%)</value>
+</data>
+<data name="MF_RETURNS_INCEPTION_DATE" xml:space="preserve">
+<value>Inception Date</value>
+</data>
+<data name="MF_RETURNS_BENCHMARK_NAME" xml:space="preserve">
+<value>Benchmark Name</value>
+</data>
+<data name="MF_SCHEME_FUNDMANAGER" xml:space="preserve">
+<value>Fund Manager</value>
+</data>
+<data name="MF_SCHEME_FUNDTYPE" xml:space="preserve">
+<value>Fund Type</value>
+</data>
+<data name="MF_SCHEME_AUM" xml:space="preserve">
+<value>AUM</value>
+</data>
+<data name="MF_SCHEME_STOCKSINSCHEME" xml:space="preserve">
+<value>Stocks in Scheme</value>
+</data>
+<data name="MF_SCHEME_PLAN" xml:space="preserve">
+<value>Plan</value>
+</data>
+<data name="MF_SCHEME_OPTION" xml:space="preserve">
+<value>Option</value>
+</data>
+
+<data name="REPORT_TYPE_AUCTION" xml:space="preserve">
+<value>Auction Details</value>
+</data>
+<data name="REPORT_TYPE_CONTRACT" xml:space="preserve">
+<value>Contract Notes</value>
+</data>
+<data name="REPORT_TYPE_DP_TRANS" xml:space="preserve">
+<value>DP Transactions</value>
+</data>
+<data name="REPORT_TYPE_FUNDS" xml:space="preserve">
+<value>Funds Transactions</value>
+</data>
+<data name="REPORT_TYPE_LEDGER" xml:space="preserve">
+<value>Ledger</value>
+</data>
+<data name="REPORT_TYPE_PLSUMMARY" xml:space="preserve">
+<value>P&L Summary</value>
+</data>
+<data name="REPORT_TYPE_QUARTERLY" xml:space="preserve">
+<value>Quarterly Payout Report</value>
+</data>
+<data name="REPORT_TYPE_TRADE" xml:space="preserve">
+<value>Trade History</value>
+</data>
+
+<data name="MYPROFILE_POASTATUS" xml:space="preserve">
+<value>POA Status</value>
+</data>
+<data name="MYPROFILE_AMC_AMOUNT" xml:space="preserve">
+<value>AMC Amount</value>
+</data>
+<data name="MYPROFILE_BANKDETAILS" xml:space="preserve">
+<value>BANK DETAILS</value>
+</data>
+<data name="MYPROFILE_DPDETAILS" xml:space="preserve">
+<value>DP DETAILS</value>
+</data>
+<data name="MYPROFILE_COMMODITIES" xml:space="preserve">
+<value>Commodities</value>
+</data>
+<data name="MYPROFILE_MYBRANCH_LOCATOR" xml:space="preserve">
+<value>Branch Locator</value>
+</data>
+<data name="MYPROFILE_ADVISOR" xml:space="preserve">
+<value>Advisor</value>
+</data>
+<data name="MYPROFILE_CASH" xml:space="preserve">
+<value>Cash</value>
+</data>
+<data name="MYPROFILE_ADVISOR_NAME" xml:space="preserve">
+<value>Advisor Name</value>
+</data>
+<data name="MYPROFILE_CONVERT_TO_ONLINE" xml:space="preserve">
+<value>Convert to Online</value>
+</data>
+<data name="MYPROFILE_ACCRUALS" xml:space="preserve">
+<value>Accruals</value>
+</data>
+<data name="SECURITIES_PAYOUT_QTY_CANNOT_GREATER_AVAIL_QTY" xml:space="preserve">
+<value>Entered quantity cannot be greater than available quantity</value>
+</data>
+<data name="SECURITIES_PAYOUT_ENTER_QTY" xml:space="preserve">
+<value>Please enter the quantity as 0 or above</value>
+</data>
+
+<data name="MF_PO_ENTER_VALID_AMT" xml:space="preserve">
+<value>Please enter a valid Amount to be invested.</value>
+</data>
+<data name="MF_PO_AMT_NOT_GREATERTHAN_CORE" xml:space="preserve">
+<value>Amount to be invested should not be greater than 1 Crore.</value>
+</data>
+<data name="MF_PO_AMT_SHOULD_GREATERTHAN_INVST_AMT" xml:space="preserve">
+<value>Amount to be invested should be greater than minimum investment amount.</value>
+</data>
+<data name="MF_PO_AMT_MULT_OF_MULT1_VALUE" xml:space="preserve">
+<value>Amount to be invested be multiple of multiple1 Value.</value>
+</data>
+<data name="MF_PO_AMT_MULT_OF_MULT2_VALUE" xml:space="preserve">
+<value>Amount to be invested be multiple of multiple2 Value.</value>
+</data>
+<data name="MF_PO_ENTER_VALID_DIGIT" xml:space="preserve">
+<value>Please enter a valid digits.</value>
+</data>
+<data name="MF_BUY" xml:space="preserve">
+<value>Buy</value>
+</data>
+<data name="MF_SELL" xml:space="preserve">
+<value>Sell</value>
+</data>
+<data name="MF_QUOTE_COMPANY_TOP_FIVE_HOLDING" xml:space="preserve">
+<value>Top Five holding of Schemes</value>
+</data>
+<data name="SSLERROR" xml:space="preserve">
+<value>You are about to be redirected to a connection that is not secure. Please select proceed to continue.</value>
+</data>
+<data name="MF_WL_CATEGORY" xml:space="preserve">
+<value>Category</value>
+</data>
+<data name="AUM(Cr.)" xml:space="preserve">
+<value>AUM (Cr.)</value>
+</data>
+<data name="MF_WL_RETURN3Y" xml:space="preserve">
+<value>Returns 3Yr (%)</value>
+</data>
+<data name="MF_WL_RETURN5Y" xml:space="preserve">
+<value>Returns 5Yr (%)</value>
+</data>
+<data name="MF_WL_RETURN1YR" xml:space="preserve">
+<value>Returns 1Yr</value>
+</data>
+<data name="MF_WL_RETURN3YR" xml:space="preserve">
+<value>Returns 3Yr</value>
+</data>
+<data name="MF_WL_RETURN5YR" xml:space="preserve">
+<value>Returns 5Yr</value>
+</data>
+<data name="MF_WL_SINCEINCEPTION" xml:space="preserve">
+<value>Since Inception</value>
+</data>
+<data name="MF_WL_MIN_INV_AMT" xml:space="preserve">
+<value>Min Inv amt</value>
+</data>
+<data name="MF_PO_TERMS" xml:space="preserve">
+<value>Terms &amp; Conditions</value>
+</data>
+<data name="MF_SEARCH_SCHEMENAME" xml:space="preserve">
+<value>Scheme Name</value>
+</data>
+<data name="MF_SEARCH_TITLE" xml:space="preserve">
+<value>MF SEARCH</value>
+</data>
+<data name="MF_ONE_YR_RETURN" xml:space="preserve">
+<value>1 Yr Returns (%)</value>
+</data>
+<data name="AE_GO" xml:space="preserve">
+<value>GO</value>
+</data>
+<data name="MF_HOLDING_MARKET_VALUE" xml:space="preserve">
+<value>Market Value</value>
+</data>
+<data name="MF_PO_AMT_MULTIPLE" xml:space="preserve">
+<value>Amount to be invested be multiple of</value>
+</data>
+<data name="MF_VALID_REDEMPTION_UNIT" xml:space="preserve">
+<value>Please enter a valid redemption unit.</value>
+</data>
+<data name="MF_VALID_SHOULD_MIN" xml:space="preserve">
+<value>Redemption units should be minimum 1.0000.</value>
+</data>
+<data name="MF_REDEMPTION_UNITS_SHOULD_NOT_LESS" xml:space="preserve">
+<value>Redemption units should not be less than minimum redeemable units.</value>
+</data>
+<data name="MF_REDEMPTION_UNITS_SHOULD_NOT_MORE" xml:space="preserve">
+<value>Redemption units should not be more than redeemable units.</value>
+</data>
+</root>
